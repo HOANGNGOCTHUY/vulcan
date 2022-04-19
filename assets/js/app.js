@@ -54,3 +54,39 @@
     repeat();
 
 
+    // 360 độ
+    $(document).ready(function(){
+        //Load the image URLs into an Array.
+               var arr = new Array();
+               $("#dvImages img").each(function () {
+                   arr.push($(this).attr("src"));
+               });
+   
+               //Set the first image URL as source for the Product.
+               $("#product").attr("src", arr[0]);
+   
+               // //Click mode.
+               // $("#product1").threesixty({ images: arr,
+               //     method: 'click',
+               //     sensibility: 1
+               // });
+   
+               //MouseMove mode.
+               $("#product").threesixty({ images: arr,
+                   method: 'mousemove',
+                   sensibility: 1
+               });
+   
+               //Automatic mode.
+            //    $("#product").threesixty({ images: arr,
+            //        method: 'auto',
+            //        direction: 'forward',
+            //        autoscrollspeed: 1000
+            //    });
+               setTimeout(function(){ 
+               $(".progressBg").hide();
+               $(".overlay").hide();
+                 }, 3000);
+       
+       
+       })

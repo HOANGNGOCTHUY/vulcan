@@ -11,6 +11,15 @@
     --green-color: #23A1A3;
     --yellow-color: #F2B92B;
 }
+.full-width{
+    width: 100%;
+}
+.half-width{
+    width: 50%;
+}
+.center{
+    text-align: center;
+}
 .btn-click{
     position: relative;
     background: var(--primary-color);
@@ -390,3 +399,323 @@ html, body {
     line-height: 40px;
 }
 
+/* Detail */
+.detail-desc{
+    margin-bottom: 119px;
+
+}
+.detail-img{
+    text-align: center;
+}
+
+/*outline  */
+.outline{
+    margin-top: 70px;
+}
+.outline-main{
+    background: url(../images/threesome.png) no-repeat top center;
+}
+
+.outline-title{
+    padding-top: 118px;
+}
+.outline-body{
+    display: flex;
+    align-items: center;
+}
+.outline-img{
+    display: block;
+    width: 100%;
+    height: 670px;
+}
+.outline-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.outline-content{
+    background: var(--yellow-color);
+    padding: 56px 33px;
+    margin-left: 76px;
+    color: var(--white-color);
+    text-align: center;
+}
+.outline-name{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+.outline-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+    text-align: justify;
+    margin-bottom: 61px;
+}
+
+/* 360 */
+.image360-main{
+    background: url(../images/outline/360.png) no-repeat ;
+    background-size: cover; 
+    background-clip: padding-box;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center; 
+}
+.icon-360{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+}
+ .product-img360 img#product{
+    top: 50% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    filter: drop-shadow(0 0 5px var(--primary-color));
+} 
+.image360-main:hover .icon-360{
+    display: none;
+}
+ .product-img360 div{
+     width: 100% !important;
+    height: 100% !important; 
+    
+} 
+.progressBar{
+    display: none;
+}
+/* Meaning */
+/* .bg-yellow{
+    background: url(../images/meaning/bg-yellow.png) no-repeat;
+    background-position: -159px center; 
+    background-size: contain;
+    padding: 300px 0 190px;
+}
+.bg-pink{
+    background: url(../images/meaning/bg-pink.png) no-repeat  159px center/contain ;
+}
+.bg-green{
+    background: url(../images/meaning/bg-green.png) no-repeat;
+    background-position: -235px center; 
+    background-size: contain;
+    padding: 300px 0 190px;
+}
+.meading-image{
+    text-align: center;
+} */
+
+/* Price */
+.price{
+    margin-bottom: 110px;
+}
+.price-main{
+    display: flex;
+    align-items: center;
+}
+
+.price-heading{
+    margin-right: 30px;
+}
+.price-title{
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 40px;
+    /* or 114% */
+    color: var(--black-color);
+}
+.price-title p{
+    font-weight: 500;
+}
+
+.price-category{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    /* identical to box height, or 250% */
+    color: #8E8E8E;
+    margin-bottom: 26px;
+}
+.price-price{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 40px;
+    color: var(--primary-color);
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 32px;
+}
+.price-price::before{
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    border: 1px solid #D32046;
+    height: 0;
+    width: 70px;
+    left: -10px;
+    top: 50%;
+}
+.price-desc{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black-color);
+    margin-bottom: 63px;
+}
+.price-image{
+    background: url(../images/price/vector.png) no-repeat 220px center/contain ;
+    width: 800px;
+    height: 467.37px;
+}
+.price-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* experience */
+.experience-main{
+    display: flex;
+}
+.experience-body{
+    margin-left: 40px;
+    position: relative;
+
+}
+.experience-heading{
+    background: url(../images/threesome.png) no-repeat top center;
+    padding: 0 100px;
+    margin-bottom: 76px;
+}
+.experience-title{
+    padding-top: 70px;
+}
+.experience-content{
+    background: url(../images/experience/vector.png) no-repeat;
+    padding: 160px 175px 230px 180px;
+    color: var(--white-color);
+    text-align: justify;
+}
+.experience-items.change{
+    display: block;
+}
+.experience-items{
+    display: none;
+}
+
+.experience-name{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.experience-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.experience-customer{
+    display: flex;
+    align-items: center;
+}
+.experience-avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.experience-avt img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.position-name{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white-color);
+}
+.position-position{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+/* Nagi ex */
+.experience-nagi{
+    position: absolute;
+    display: flex;
+    bottom: 230px;
+    right: 193px;
+    align-items: center;
+}
+.experience-nagi .nagi{
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.experience-nagi .nagi.change{
+    width: 8px;
+    height: 8px;
+    background: var(--white-color);
+}
+.experience-nagi .nagi:hover{
+    width: 8px;
+    height: 8px;
+    background: var(--white-color);
+}
+
+/* cONTACT */
+.contact-main{
+    display: flex;
+}
+.form-contact{
+    margin-top: 120px;
+}
+.contact-body{
+    margin-left: 30px;
+    width: 100%;
+}
+.contact-heading{
+    background: url(../images/threesome.png) no-repeat;
+    padding-top: 120px;
+}
+.contact-title{
+    text-align: left;
+}
+.contact-desc{
+    text-align: left;
+    max-width: 505px;
+    margin-bottom: 36px;
+}
+.contact-content{
+
+}
+.contact-hotline{
+    display: flex;
+    list-style: none;
+}
+.contact-hotline li{
+    margin: 0 34px;
+}
+.contact-hotline a{
+    text-decoration: none;
+    color: var(--black-color);
+    
+}
+.contact-hotline i{
+    margin-right: 30px;
+}
