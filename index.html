@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="app">
+        <!-- header -->
         <section class="header">
             <div class="container-fluid">
                 <div class="header-main">
@@ -71,12 +72,14 @@
         <section class="different">
             <div class="container">
                 <div class="different-main">
-                    <h1 class="global-title different-title">
-                        KHÁC BIỆT ĐẾN TỪ SỰ THIẾT YẾU
-                    </h1>
-                    <div class="global-desc different-desc">
-                        Tiên phong về công nghệ của tương lai
-                    </div>
+                   <div class="vulcan-heading">
+                        <h1 class="global-title different-title">
+                            KHÁC BIỆT ĐẾN TỪ SỰ THIẾT YẾU
+                        </h1>
+                        <div class="global-desc different-desc">
+                            Tiên phong về công nghệ của tương lai
+                        </div>
+                   </div>
 
                     <div class="different-list">
                         <div class="different-item">
@@ -119,10 +122,12 @@
                     </div>
                     <div class="feature-right">
                         <img src="./assets/images/feature/bg-right.png" alt="">
-                    </div>
-
+                    </div>d
+                    
+                <div class="vulcan-heading">
                     <h1 class="global-title feature-title">KHÁM PHÁ BÀN LÀM VIỆC 5.0</h1>
                     <div class="global-desc feature-desc">Đơn giản hóa từ tính năng tuyệt vời của Vulcan</div>
+                </div>
 
                     <div class="feature-list">
                         <div class="feature-item">
@@ -187,16 +192,49 @@
         <section class="story">
             <div class="container-fluid">
                 <div class="story-main">
-                    <h1 class="global-title story-title">Câu chuyện</h1>
-                    <div class="global-desc story-desc">Về bàn làm việc 5.0</div>
-
-                    <div class="story-item">
-                        <div class="story-img">
-                            <img src="./assets/images/story/hinh360.png" alt="">
-                            <!-- <img src="./assets/images/story/render.png" alt=""> -->
-                        </div>
-                        
+                    <div class="vulcan-heading">
+                        <h1 class="global-title story-title">Câu chuyện</h1>
+                        <div class="global-desc story-desc">Về bàn làm việc 5.0</div>
                     </div>
+
+                    <div class="story-img  container-1000w ">
+                        <img class="img-1" src="./assets/images/story/hinh360.png" alt="">
+                        <img class="img-2" src="./assets/images/story/render.png" alt="">
+                    </div> 
+                 
+                    <div class="checkbox-image">
+                        <label class="switch">
+                            <input type="checkbox" id="checkbox-img">aaaa
+                            <span class="slip round"></span>
+                        </label>
+                    </div>
+                    <!-- 
+                                    .field .fieldimg1{
+                        display: block;
+                    } 
+                    .field .fieldimg2{
+                        display: none;
+                    } 
+                    
+                    #summer:checked ~ .field .fieldimg1 {
+                        display: none;
+                    } 
+                    #summer:checked ~ .field .fieldimg2 {
+                        display: block;
+                    } 
+
+                    <input id="summer" type="checkbox" name="season"> Summer
+                    
+
+
+                    <div class="field">
+                        <img src="./assets/images/story/hinh360.png" alt="" class="fieldimg1">
+                        <img src="./assets/images/story/render.png" alt="" class="fieldimg2">
+                    </div> 
+                     -->
+                   
+
+                    
                 </div>
                 <div class="story-content">
                     <div class="story-text">
@@ -218,8 +256,10 @@
         <section class="detail">
             <div class="container">
                 <div class="detail-main">
-                    <h1 class="global-title detail-title">Chi tiết sản phẩm</h1>
-                    <div class="global-desc detail-desc">Chọn lọc những chất liệu tốt nhất mang đến người dùng</div>
+                    <div class="vulcan-heading">
+                        <h1 class="global-title detail-title">Chi tiết sản phẩm</h1>
+                        <div class="global-desc detail-desc">Chọn lọc những chất liệu tốt nhất mang đến người dùng</div>
+                    </div>
                 </div>
                 <div class="detail-img">
                     <img src="./assets/images/detail/detail.png" alt="">
@@ -231,8 +271,10 @@
         <section class="outline">
             <div class="container">
                 <div class="outline-main">
-                    <h1 class="global-title outline-title">NHỮNG BẢN PHÁC THẢO GIÁ TRỊ</h1>
-                    <div class="global-desc detail-desc">Dáng hình nguyên sơ từ trí óc truyền đến đôi tay</div>
+                    <div class="vulcan-heading">
+                        <h1 class="global-title outline-title">NHỮNG BẢN PHÁC THẢO GIÁ TRỊ</h1>
+                        <div class="global-desc detail-desc">Dáng hình nguyên sơ từ trí óc truyền đến đôi tay</div>
+                    </div>
                 </div>
                 <div class="outline-body">
                     <div class="outline-img">
@@ -322,9 +364,11 @@
         <!-- <section class="meaning">
             <div class="container-fluid">
                 <div class="meaning-main">
-                    <h1 class="global-title meaning-title">GIẢI MÃ THIẾT KẾ</h1>
-                    <div class="global-desc meaning-desc">
-                        Bóc tách bí mật từng chi tiết
+                    <div class="vulcan-heading">
+                        <h1 class="global-title meaning-title">GIẢI MÃ THIẾT KẾ</h1>
+                        <div class="global-desc meaning-desc">
+                            Bóc tách bí mật từng chi tiết
+                        </div>
                     </div>
                     <div class="meaning-content">
                          <div class="meaning-item bg-yellow">
@@ -354,7 +398,9 @@
                                 <img src="./assets/images/meaning/chanban.png" alt="">
                             </div>
                         </div>
-                        
+                        <img src="./assets/images/meaning/matban.png" alt="">
+                        <img src="./assets/images/meaning/trunangluong.png" alt="">
+                        <img src="./assets/images/meaning/chanban.png" alt="">
                     </div>
                 </div>
             </div>
@@ -390,8 +436,7 @@
                     </div>
 
                     <div class="experience-body">
-                    
-                        <div class="experience-heading">
+                        <div class=" vulcan-heading experience-heading">
                             <h1 class="global-title experience-title ">
                                 trải nghiệm & đánh giá
                             </h1>
@@ -464,14 +509,26 @@
             <div class="container">
                 <div class="contact-main">
                     <form action="" class="form-contact">
-                        <input type="text" placeholder="Họ Tên" class="control-form half-width">
-                        <input type="text" placeholder="E-mail" class="control-form half-width">
-                        <input type="text" placeholder="Chủ đề" class="control-form full-width">
-                        <input type="text" placeholder="Nhập nội dung" class="control-form">
-                        <input type="submit" class="btn-click">
+                        <div class="form-field col half-width">
+                            <input type="text" name="name" id="name" placeholder="Họ Tên" class="control-form " required>
+                        </div>
+                        <div class="form-field col half-width">
+                            <input type="text" name="email" id="email" placeholder="E-mail" class="control-form " required>
+                        </div>
+                        <div class="form-field col full-width">
+                            <input type="text" name="title" id="title" placeholder="Chủ đề" class="control-form " required>
+                        </div>
+                        <div class="form-field col full-width">
+                            <textarea name="description" id="description" rows="4" placeholder="Nhập nội dung..."  class="control-form "></textarea>
+                        </div>
+                         <div class="form-field col">
+                            <input type="submit" class="submit-btn" value="gửi">
+                        </div>
                     </form>
+                    
+                    <!-- <div class="clear"></div> -->
                     <div class="contact-body">
-                        <div class="contact-heading">
+                        <div class="vulcan-heading left contact-heading">
                             <div class="contact-title global-title">Liên hệ</div>
                             <div class="contact-desc global-desc">Hãy liên lạc bằng cách gửi e-mail hoặc gọi ngay cho chúng tôi</div>
                         </div>
@@ -482,6 +539,55 @@
                                 <li class="contact-item"><a href="tel:+0792134081">0792 134 081</a></li>
                                 <li class="contact-item"><a href="tel:+0933316141">0933 316 141</a></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Maps -->
+        <section class="maps">
+            <div class="vulcan">
+                <div class="maps-main">
+                    <div class="maps-image">
+                        <img src="./assets/images/maps.png" alt="">
+                    </div>
+                    <div class="maps-content">
+                        <div class="maps-item maps-address">
+                            <i class="maps-icon fa-solid fa-house"></i>
+                            <span>86/36/3 Phổ Quang, Phường 2, Quận Tân Bình, Thành Phố Hồ Chí Minh, Việt Nam</span>
+                        </div>
+                        <div class="maps-item maps-website">
+                            <i class="maps-icon fa-solid fa-house"></i>
+                            <span>www.elsun.vn</span>
+                        </div>
+                        <span class="span-top"></span>
+                        <span class="span-center"></span>
+                        <span class="span-bottom"></span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="footer-main">
+                    <div class="footer-item">
+                        <div class="footer-img">
+                            <img src="./assets/images/footer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <ul class="footer-menu">
+                           <li class="menu-item"><a href="#">Facebook</a></li>
+                           <li class="menu-item"><a href="#">Instagram</a></li>
+                           <li class="menu-item"><a href="#">Shopee</a></li>
+                           <li class="menu-item"><a href="#">Amazon</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-copyright">
+                            Copyright &copy elsun.vn, 2020
                         </div>
                     </div>
                 </div>
