@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VULCAN</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -16,6 +17,9 @@
                 <div class="header-main">
                     <div class="header-logo">
                         <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <div class="header-toggle">
+                        <i class="header-bars fa-solid fa-bars "></i>
                     </div>
                     <ul class="header-menu">
                         <li class="menu-item"><a class="header-links" href="http://" target="_blank" rel="noopener noreferrer"><i class="icon-header fa-solid fa-phone"></i>www.elsun.vn</a></li>
@@ -117,12 +121,12 @@
         <section class="feature">
             <div class="container-fluid">
                 <div class="feature-main">
-                    <div class="feature-left">
+                    <!-- <div class="feature-left">
                         <img src="./assets/images/feature/bg-left.png" alt="">
                     </div>
                     <div class="feature-right">
                         <img src="./assets/images/feature/bg-right.png" alt="">
-                    </div>d
+                    </div> -->
                     
                 <div class="vulcan-heading">
                     <h1 class="global-title feature-title">KHÁM PHÁ BÀN LÀM VIỆC 5.0</h1>
@@ -198,55 +202,43 @@
                     </div>
 
                     <div class="story-img  container-1000w ">
-                        <img class="img-1" src="./assets/images/story/hinh360.png" alt="">
-                        <img class="img-2" src="./assets/images/story/render.png" alt="">
+                        <img id="img-1" src="./assets/images/story/render.png" alt="">
+                        <img id="img-2" src="./assets/images/story/hinh360.png" alt="">
                     </div> 
                  
                     <div class="checkbox-image">
                         <label class="switch">
-                            <input type="checkbox" id="checkbox-img">aaaa
+                            <input type="checkbox" id="checkbox-img"/>
                             <span class="slip round"></span>
                         </label>
                     </div>
-                    <!-- 
-                                    .field .fieldimg1{
-                        display: block;
-                    } 
-                    .field .fieldimg2{
-                        display: none;
-                    } 
-                    
-                    #summer:checked ~ .field .fieldimg1 {
-                        display: none;
-                    } 
-                    #summer:checked ~ .field .fieldimg2 {
-                        display: block;
-                    } 
-
-                    <input id="summer" type="checkbox" name="season"> Summer
-                    
-
-
-                    <div class="field">
-                        <img src="./assets/images/story/hinh360.png" alt="" class="fieldimg1">
-                        <img src="./assets/images/story/render.png" alt="" class="fieldimg2">
-                    </div> 
-                     -->
-                   
-
-                    
                 </div>
                 <div class="story-content">
-                    <div class="story-text">
-                        <h1 class="story-name">MỤC ĐÍCH hình thành</h1>
+                    <div class="story-item story-active">
+                        <h1 class="story-name">MỤC ĐÍCH hình thành 1</h1>
                         <div class="sotry-description">Khởi nguồn ý tưởng cho sự ra đời của Vulcan đến từ tính đại trà của các mẫu bàn làm việc đang có trên thị trường. Mặt khác, sự trải nghiệm của người dùng đối với sản phẩm cũng chưa được chú trọng. Kiểu dáng cũng chưa thể hiện rõ công năng của một chiếc bàn làm việc.
                         <br>
                         <br>
                         Thị trường đòi hỏi một sản phẩm khác biệt, các chi tiết cấu thành dù nhỏ nhất phải được thiết kế theo từng thao tác của người dùng. Vulcan chắc chắn đáp ứng được điều này và tạo ra xu hướng mới.</div>
                     </div>
-                    <div class="naviprevnext">
-                        <div class="panivation prev"><i class="icon-click fa-solid fa-circle-arrow-left"></i></div>
-                        <div class="panivation next"><i class="icon-click fa-solid fa-circle-arrow-right"></i></div>
+                    <div class="story-item">
+                        <h1 class="story-name">MỤC ĐÍCH hình thành 2</h1>
+                        <div class="sotry-description">Khởi nguồn ý tưởng cho sự ra đời của Vulcan đến từ tính đại trà của các mẫu bàn làm việc đang có trên thị trường. Mặt khác, sự trải nghiệm của người dùng đối với sản phẩm cũng chưa được chú trọng. Kiểu dáng cũng chưa thể hiện rõ công năng của một chiếc bàn làm việc.
+                        <br>
+                        <br>
+                        Thị trường đòi hỏi một sản phẩm khác biệt, các chi tiết cấu thành dù nhỏ nhất phải được thiết kế theo từng thao tác của người dùng. Vulcan chắc chắn đáp ứng được điều này và tạo ra xu hướng mới.</div>
+                    </div>
+                    <div class="story-item">
+                        <h1 class="story-name">MỤC ĐÍCH hình thành 3</h1>
+                        <div class="sotry-description">Khởi nguồn ý tưởng cho sự ra đời của Vulcan đến từ tính đại trà của các mẫu bàn làm việc đang có trên thị trường. Mặt khác, sự trải nghiệm của người dùng đối với sản phẩm cũng chưa được chú trọng. Kiểu dáng cũng chưa thể hiện rõ công năng của một chiếc bàn làm việc.
+                        <br>
+                        <br>
+                        Thị trường đòi hỏi một sản phẩm khác biệt, các chi tiết cấu thành dù nhỏ nhất phải được thiết kế theo từng thao tác của người dùng. Vulcan chắc chắn đáp ứng được điều này và tạo ra xu hướng mới.</div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="box prev-btn"><i class="icon-click fa-solid fa-circle-arrow-left"></i></div>
+                        <div class="box next-btn"><i class="icon-click fa-solid fa-circle-arrow-right"></i></div>
                     </div>
                 </div>
             </div>
@@ -291,7 +283,7 @@
         
         </section>
         <!-- 360 -->
-        <section class="image360">
+        <!-- <section class="image360">
             <div class="vulcan">
                 <div class="image360-main">
                     <div class="icon-360">
@@ -304,64 +296,12 @@
                         <img src="./assets/images/360/ban.png" alt="">
                         <img src="./assets/images/360/ban2.png" alt="">
                         <img src="./assets/images/360/ban3.png" alt="">
-
-                        
-                        <!-- <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/1.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/2.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/3.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/4.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/5.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/6.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/7.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/8.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/10.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/11.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/12.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/13.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/14.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/15.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/16.png">
-                        <img src= "https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/17.png"> 
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/18.png"> 
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/19.png"> 
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/20.png"> 
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/21.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/22.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/23.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/24.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/25.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/26.png"> 
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/27.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/28.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/29.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/30.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/31.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/32.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/33.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/34.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/35.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/36.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/37.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/38.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/39.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/40.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/41.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/42.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/43.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/44.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/45.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/46.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/47.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/48.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/49.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/50.png">
-                        <img src="https://res.cloudinary.com/dewn0wy2s/image/upload/v1592668487/360/51.png">  -->
                 </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--meaning-->
-        <!-- <section class="meaning">
+         <section class="meaning">
             <div class="container-fluid">
                 <div class="meaning-main">
                     <div class="vulcan-heading">
@@ -370,41 +310,29 @@
                             Bóc tách bí mật từng chi tiết
                         </div>
                     </div>
-                    <div class="meaning-content">
+                    <div class="meaning-content ">
                          <div class="meaning-item bg-yellow">
-                            <div class="meaning-heading">
-                                <span>01</span>
-                                <h1>Mặt bàn</h1>
-                            </div>
-                            <div class="meading-image">
-                                <img src="./assets/images/meaning/matban.png" alt="">
+                            <div class="meading-image vulcan">
+                                <img src="./assets/images/detail/detail.png" alt="">
                             </div>
                         </div> 
                         <div class="meaning-item bg-pink">
-                            <div class="meaning-heading">
-                                <span>01</span>
-                                <h1>Mặt bàn</h1>
-                            </div>
-                            <div class="meading-image">
-                                <img src="./assets/images/meaning/trunangluong.png" alt="">
+                            <div class="meading-image vulcan">
+                                <img src="./assets/images/detail/detail.png" alt="">
                             </div>
                         </div>
                         <div class="meaning-item bg-green">
-                            <div class="meaning-heading">
-                                <span>01</span>
-                                <h1>Mặt bàn</h1>
-                            </div>
-                            <div class="meading-image">
-                                <img src="./assets/images/meaning/chanban.png" alt="">
+                            <div class="meading-image vulcan">
+                                <img src="./assets/images/detail/detail.png" alt="">
                             </div>
                         </div>
-                        <img src="./assets/images/meaning/matban.png" alt="">
-                        <img src="./assets/images/meaning/trunangluong.png" alt="">
-                        <img src="./assets/images/meaning/chanban.png" alt="">
+                        <!-- <img src="./assets/images/meaning/matbanchuan.png" alt="">
+                        <img src="./assets/images/meaning/trunangluongchuan.png" alt="">
+                        <img src="./assets/images/meaning/chanchuan.png" alt=""> -->
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Price -->
         <section class="price">

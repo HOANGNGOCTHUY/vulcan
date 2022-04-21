@@ -2,7 +2,7 @@
     var btns = document.querySelectorAll('.btn');
     var sliders = document.querySelectorAll('.slider-item');
 
-    let currentSlide = 1;
+    var currentSlide = 1;
 
     var manualNav = function (manual){
         sliders.forEach((slide) => {
@@ -53,7 +53,7 @@
     }
     repeat();
 
-
+// -************************************************************
     // 360 độ
     $(document).ready(function(){
         //Load the image URLs into an Array.
@@ -90,3 +90,93 @@
        
        
        })
+// *************************************************************************************
+//comment
+    var nagis = document.querySelectorAll('.nagi');
+    var experiences = document.querySelectorAll('.experience-items');
+
+    let count = 1;
+
+    var manualNav = function (manual){
+        experiences.forEach((experience) => {
+            experience.classList.remove('change');
+
+            nagis.forEach((nagi) =>{
+                nagi.classList.remove('change');
+        });
+        });
+        
+        experiences[manual].classList.add('change');
+        nagis[manual].classList.add('change');
+    }
+
+    nagis.forEach((nagi,i) => {
+        nagi.addEventListener("click",() =>{
+            manualNav(i);
+            count = i;
+        });
+    });
+
+    //autoplay navigation
+
+    var repeat = function(activeClass){
+        let active = document.getElementsByClassName('change');
+        let i = 1;
+
+        var repeater = () =>{
+            setTimeout(function(){
+                [...active].forEach((activeSlide) =>{
+                    activeSlide.classList.remove('change');
+                });
+                experiences[i].classList.add('change');
+                nagis[i].classList.add('change');
+                    i++;
+
+                    if(experiences.length == i){
+                        i =0;
+                    }
+                    if(i >= experiences.length){
+                        return ;
+                    }
+                    repeater();
+                
+            },3000);
+        }
+        repeater();
+    }
+    repeat();
+// *****************************************************************
+// Show hide img
+    var check = document.getElementById('checkbox-img');
+    var img1 = document.getElementById('img-1');
+    var img2 = document.getElementById('img-2');
+    check.addEventListener("click", function(){
+        if(check.checked == true ){
+        
+            img1.style.display = 'none';
+            img2.style.display = 'block';
+        }else{
+            img1.style.display = 'block';
+            img2.style.display = 'none';
+        }
+    })
+// Slide story
+    var storys = document.querySelectorAll('.story-item');
+    var nextBtn = document.querySelector(".next-btn");
+    var prevBtn = document.querySelector(".prev-btn");
+    var curentIndex = 0;
+
+    nextBtn.addEventListener("click",function(){
+        storys[curentIndex].classList.remove('story-active');
+        curentIndex = (curentIndex +1 ) % storys.length;
+        storys[curentIndex].classList.add("story-active");
+    })
+    prevBtn.addEventListener("click",function(){
+        storys[curentIndex].classList.remove('story-active');
+        curentIndex = (curentIndex - 1 + storys.length) % storys.length;
+        storys[curentIndex].classList.add("story-active");
+    })
+
+
+
+

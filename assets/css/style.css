@@ -113,15 +113,19 @@ html, body {
     margin-bottom: 33px;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    align-items: center;
 }
 .header-logo{
-    width: 200px;
-    height: 69px;
+   
 }
 .header-logo img{
     width: 100%;
     height: auto;
+}
+.header-toggle .header-bars {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 .header-menu{
     display: flex;
@@ -237,10 +241,12 @@ html, body {
 
 .different-list{
     display: flex;
+    
 }
 .different-item{
     display: flex;
     align-items: center;
+    padding: 0 25px;
 }
 .different-img img{
     width: 50px;
@@ -248,8 +254,9 @@ html, body {
 }
 .different-content{
     text-align: justify;
-    padding: 0 50px 0 20px;
+    margin-left: 20px;
 }
+
 .different-name{
     margin-bottom: 9px;
 }
@@ -272,7 +279,14 @@ html, body {
     position: absolute;
     left: 0;
 }
-
+.feature-left img{
+    width: 100%;
+    height: auto;
+}
+.feature-right img{
+    width: 100%;
+    height: auto;
+}
 .feature-right{
     position: absolute;
     right: 0;
@@ -293,6 +307,7 @@ html, body {
 .feature-item{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .feature-content-left{
     text-align: right;
@@ -321,11 +336,12 @@ html, body {
     color: rgba(0, 0, 0, 0.9);
     margin-bottom: 52px;
     max-width: 269px;
+    width: 100%;
 }
-/* .feature-image img{
-    width: 580px;
-    height: 358.24px;
-} */
+ .feature-image img{
+    width: 100%;
+    height: auto;
+} 
 
 /* STORY */
 .story{
@@ -339,43 +355,9 @@ html, body {
     height: auto;
 }
 /* Ẩn ảnh */
-.story-item .story-img .img-1{
-    display: block;
-}
-.story-item .story-img .img-2{
+.story-img #img-2{
     display: none;
 }
-#checkbox-img:checked ~ .story-item .story-img .img-1{
-    display: none;
-}
-#checkbox-img:checked ~ .story-item .story-img .img-2{
-    display: block;
-}
-/* test */
-/* .story-img{
-   position: relative;
-}
-
-.story-item .story-img .img-1{ 
-    transition: all 0.5s ease 0s; 
-}
-.story-item:hover .sotry-img .img-1{ 
-    display: none;
-}
-.story-item .story-img .img-2{
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.4s ease-in-out;
-}
-.story-item:hover .story-img .img-2{
-    display: block;
-} */
-
- 
 
 /* end test */
 .story-img{
@@ -387,13 +369,33 @@ html, body {
     padding: 0 375px;
     position: relative;
 }
+.story-content::before{
+    position: absolute;
+    display: block;
+    content: "";
+    background: rgba(35, 161, 163, 0.3);
+    padding: 5px 6px;
+    width: 60%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 
-.story-text{
+}
+.story-item{
     padding: 30px 100px;
     text-align: justify;
     position: relative;
+    animation: story-item .4s linear .6s backwards;
 }
-.story-text::before{
+@keyframes story-item{
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+}
+
+.story-item::before{
     content: "";
     position: absolute;
     /* background: rgba(35, 161, 163, 0.3); */
@@ -404,6 +406,12 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
+}
+.story-item{
+    display: none;
+}
+.story-item.story-active{
+   display: block;
 }
 .story-name{
     font-weight: 700;
@@ -479,7 +487,7 @@ input:checked + .slip:before {
 }
 
 /* Pani */
-.naviprevnext{
+.controls{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -492,7 +500,7 @@ input:checked + .slip:before {
     color: rgba(255, 255, 255, 0.5);
 
 }
-.panivation{
+.box{
     position: relative;
     width: 50px;
     height: 50px;
@@ -500,8 +508,12 @@ input:checked + .slip:before {
     border: 1px solid var(--white-color);
     cursor: pointer;
 }
-.panivation:hover .icon-click {
+.box:hover .icon-click {
     color: var(--white-color);
+}
+.box.disabled{
+    
+    background-color: blue;
 }
 
 .icon-click::before{
@@ -520,6 +532,9 @@ input:checked + .slip:before {
 }
 
 /* Detail */
+.detail{
+    margin-bottom: 70px;
+}
 .detail-desc{
     margin-bottom: 119px;
 
@@ -527,10 +542,13 @@ input:checked + .slip:before {
 .detail-img{
     text-align: center;
 }
-
+.detail-img img{
+    width: 100%;
+    height: auto;
+}
 /*outline  */
 .outline{
-    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .outline-title{
@@ -556,6 +574,8 @@ input:checked + .slip:before {
     margin-left: 76px;
     color: var(--white-color);
     text-align: center;
+    max-width: 470px;
+    width: 100%;
 }
 .outline-name{
     font-weight: 700;
@@ -611,24 +631,30 @@ input:checked + .slip:before {
 .meaning-main{
     margin-bottom: 70px;
 } 
-/* .bg-yellow{
+.meaning-content img{
+    width: 100%;
+    height: auto;
+}
+.meaning-item{
+    padding: 100px 0;
+}
+ .bg-yellow{
     background: url(../images/meaning/bg-yellow.png) no-repeat;
     background-position: -159px center; 
     background-size: contain;
-    padding: 300px 0 190px;
 }
+
 .bg-pink{
-    background: url(../images/meaning/bg-pink.png) no-repeat  159px center/contain ;
+    background: url(../images/meaning/bg-pink.png) no-repeat   ;
+    background-position: right center; 
+    background-size: contain;
 }
 .bg-green{
     background: url(../images/meaning/bg-green.png) no-repeat;
-    background-position: -235px center; 
+    background-position: -159px center; 
     background-size: contain;
-    padding: 300px 0 190px;
+
 }
-.meading-image{
-    text-align: center;
-} */
 
 /* Price */
 .price{
@@ -637,10 +663,13 @@ input:checked + .slip:before {
 .price-main{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .price-heading{
     margin-right: 30px;
+    max-width: 370px;
+    width: 100%;
 }
 .price-title{
     font-weight: 300;
@@ -689,14 +718,14 @@ input:checked + .slip:before {
     margin-bottom: 63px;
 }
 .price-image{
-    background: url(../images/price/vector.png) no-repeat 220px center/contain ;
-    width: 800px;
-    height: 467.37px;
+    background: url(../images/price/vector.png) no-repeat center/contain ;
+    width: 100%;
 }
-.price-image{
+.price-image img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    padding: 100px 0 40px 0;
 }
 /* experience */
 .experience-main{
@@ -705,6 +734,8 @@ input:checked + .slip:before {
 .experience-body{
     margin-left: 40px;
     position: relative;
+    max-width: 640px;
+    width: 100%;
 
 }
 .experience-heading{
@@ -716,15 +747,16 @@ input:checked + .slip:before {
 }
 .experience-content{
     background: url(../images/experience/vector.png) no-repeat;
-    padding: 160px 175px 230px 180px;
     color: var(--white-color);
     text-align: justify;
 }
 .experience-items.change{
     display: block;
+    
 }
 .experience-items{
     display: none;
+    padding: 160px 175px 230px 180px;
 }
 
 .experience-name{
@@ -768,6 +800,12 @@ input:checked + .slip:before {
     line-height: 20px;
     color: var(--white-color);
     text-transform: uppercase;
+}
+.experience-image{
+}
+.experience-image img{
+    width: 100%;
+    height: auto;
 }
 
 /* Nagi ex */
