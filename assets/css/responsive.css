@@ -1,7 +1,13 @@
 @media screen and (max-width: 1365px) {
     /* Feature */
+    .feature{
+        margin-bottom: 70px;
+    }
     .feature-content{
         padding: 25px;
+    }
+    .feature-left, .feature-right  {
+        display: none;
     }
     /* Story */
     .story-content{
@@ -9,6 +15,7 @@
     }
     .story-content::before{
         width: 100%;
+        padding: 5px 0;
     }
     .story-item{
         padding: 30px 50px;
@@ -36,10 +43,13 @@
     .experience-main{
         padding: 0 25px;
     }
+    .experience-image{
+        width: 100%;
+    }
     .experience-body{
         max-width: 100%;
-        width: 60%;
-        margin-left: 20px;
+        width: 100%;
+        margin: 0;
     }
     .experience-heading{
         padding: 0;
@@ -48,10 +58,14 @@
         background-size: contain;
     }
     .experience-items{
-        /* padding: 90px 125px 90px 95px; */
+        max-width: 250px;
     }
     .experience-name{
-
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .experience-nagi{
+        top: 78%;
     }
 
     /* Contact */
@@ -61,6 +75,12 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .global-title{
+        font-size: 20px;
+    }
+    .global-desc{
+        font-size: 20px;
+    }
     /* Menu */
     .header-menu{
         position: fixed;
@@ -68,15 +88,23 @@
         right: 0;
         bottom: 0;
         /* left: 0; */
-        z-index: 9;
+        z-index: 2;
         background: white;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         flex-direction: column;
-        align-items: stretch;
-        transform: translateX(100%);
-        transition: all 0.2s linear;
+        justify-content: center;
+        /* transform: translateX(100%); */
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s linear;
+    }
+    .header-menu.is-active{
+        opacity: 1;
+        visibility: visible;
     }
     .header-links{
+        width: 100%;
         display: block;
         padding: 15px 25px;
     }
@@ -112,16 +140,26 @@
     .meading-image{
         padding: 0 50px;
     }
+    /* Ex */
+    
+    .experience-heading{
+        margin-bottom: 25px;
+    }
+    .experience-nagi{
+        top: 82%;
+    }
     /* Contact */
     .contact-main{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .form-contact{
         width: 100%;
+        margin-top: 70px;
     }
     .contact-body{
         width: 100%;
         padding: 0 25px;
+        margin: 0;
     }
     .contact-desc{
         max-width: 100%;
@@ -176,6 +214,44 @@
     }
     .price-image img{
         padding: 50px 0 20px 0;
+    }
+    /* Experience */
+    .experience-main{
+        flex-direction: column-reverse;
+    }
+    /* Contact */
+    .left.vulcan-heading::before{
+        left: 50%;
+        margin-left: 0;
+    }
+    .contact-title{
+        text-align: center;
+    }
+    .contact-desc{
+        text-align: center;
+    }
+    .contact-name{
+        text-align: center;
+    }
+    .contact-hotline li{
+        padding: 0;
+        border: 0;
+    }
+    .contact-hotline i{
+        display: none;
+    }
+    .contact-hotline{
+        flex-direction: column;
+    }
+    .form-field.half-width{
+        width: 100%;
+    }
+    /* Footer */
+    .footer-menu{
+        flex-direction: column;
+    }
+    .footer-menu .menu-item{
+        padding: 15px 25px;
     }
 }
 

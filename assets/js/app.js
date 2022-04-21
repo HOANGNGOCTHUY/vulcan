@@ -1,3 +1,28 @@
+// Bars menu
+window.addEventListener("load", function(){
+    const menu = document.querySelector(".header-menu");
+    const menuBg = document.querySelector(".menu-bg");
+    const menuToggle = document.querySelector(".header-toggle");
+    const menuClose = document.querySelector(".header-close");
+
+
+    menuToggle.addEventListener("click", handleToggleMenu);
+    function handleToggleMenu(e){
+        menuBg.classList.add("is-active");
+        menu.classList.add("is-active");
+        menuClose.classList.add("is-active");
+
+    }
+    menuClose.addEventListener("click", handleCloseMenu);
+    function handleCloseMenu(e){
+        menuBg.classList.remove("is-active");
+        menu.classList.remove("is-active");
+
+    }
+
+})
+
+
 //Slider
     var btns = document.querySelectorAll('.btn');
     var sliders = document.querySelectorAll('.slider-item');

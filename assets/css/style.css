@@ -122,10 +122,38 @@ html, body {
     width: 100%;
     height: auto;
 }
+.header-toggle  .header-close{
+    display: none;
+    position: fixed;
+    top: 74px;
+    right: 140px;
+    color: var(--primary-color);
+    font-size: 30px;
+    z-index: 10;
+}
+.header-toggle  .header-close.is-active{
+    display: inline-block;
+}
 .header-toggle .header-bars {
     display: none;
     font-size: 20px;
     cursor: pointer;
+}
+.menu-bg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    position: fixed;
+    top: 55px;
+    right: 115px;
+    transform: scale(0);
+    z-index: 0;
+    transition: all 0.2s linear;
+}
+.menu-bg.is-active{
+    z-index: 1;
+    transform: scale(100);
 }
 .header-menu{
     display: flex;
@@ -746,17 +774,30 @@ input:checked + .slip:before {
     padding-top: 70px;
 }
 .experience-content{
-    background: url(../images/experience/vector.png) no-repeat;
     color: var(--white-color);
     text-align: justify;
+    position: relative;
+}
+.experience-image{
+    position: relative;
+    display: block;
+}
+.experience-image img{
+    width: 100%;
+    height: auto;
 }
 .experience-items.change{
     display: block;
     
 }
 .experience-items{
+    position: absolute;
     display: none;
-    padding: 160px 175px 230px 180px;
+    max-width: 300px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-65%);
 }
 
 .experience-name{
@@ -801,20 +842,18 @@ input:checked + .slip:before {
     color: var(--white-color);
     text-transform: uppercase;
 }
-.experience-image{
-}
-.experience-image img{
-    width: 100%;
-    height: auto;
-}
+
+
 
 /* Nagi ex */
 .experience-nagi{
     position: absolute;
     display: flex;
-    bottom: 230px;
-    right: 193px;
+    top: 73%;
+    left: 66%;
+    /* right: 30%; */
     align-items: center;
+    transform:  translateX(-50%) translateY(-50%);
 }
 .experience-nagi .nagi{
     width: 5px;
