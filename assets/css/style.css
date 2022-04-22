@@ -126,13 +126,13 @@ html, body {
 /* End menu */
 
 /* SLider */
-.slider-item{
+/* .slider-item{
     display: none;  
 }
 
 .slider-item.active{
     display: block;
-}
+} */
 
 .slider-main{
     position: relative;
@@ -357,7 +357,7 @@ html, body {
     padding: 30px 100px;
     text-align: justify;
     position: relative;
-    animation: story-item .4s linear .6s backwards;
+    animation: story-item .2s linear .3s backwards;
 }
 @keyframes story-item{
     0%{
