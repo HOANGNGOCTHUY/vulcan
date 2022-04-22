@@ -1,26 +1,19 @@
 // Bars menu
-window.addEventListener("load", function(){
-    const menu = document.querySelector(".header-menu");
-    const menuBg = document.querySelector(".menu-bg");
-    const menuToggle = document.querySelector(".header-toggle");
-    const menuClose = document.querySelector(".header-close");
 
-
-    menuToggle.addEventListener("click", handleToggleMenu);
-    function handleToggleMenu(e){
-        menuBg.classList.add("is-active");
-        menu.classList.add("is-active");
-        menuClose.classList.add("is-active");
-
-    }
-    menuClose.addEventListener("click", handleCloseMenu);
-    function handleCloseMenu(e){
-        menuBg.classList.remove("is-active");
-        menu.classList.remove("is-active");
-
-    }
-
+const hambuger = document.querySelector(".hamburger");
+const navMenu = document.querySelector('.header-menu');
+const menuItem =document.querySelector("menu-item");
+hambuger.addEventListener("click", function(){
+    hambuger.classList.toggle("actived");
+    navMenu.classList.toggle("actived");
 })
+
+// menuItem.forEach(n => n.addEventListener("click", ()=>{
+//     hambuger.classList.remove("actived");
+//     navMenu.classList.remove("actived");
+
+// }))
+
 
 
 //Slider

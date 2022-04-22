@@ -31,6 +31,10 @@
     .outline-content{
         margin-left: 50px;
     }
+    /* 360 */
+    .product-img360{
+        padding: 0 20px;
+    }
     /* Meaning */
     .meading-image{
         padding: 0 50px;
@@ -38,6 +42,11 @@
     /* Price */
     .price-main {
         padding: 0 25px;
+    }
+    .price-image img{
+        padding: 0;
+        /* height: auto;
+        width: 100%; */
     }
     /* experience */
     .experience-main{
@@ -82,36 +91,38 @@
         font-size: 20px;
     }
     /* Menu */
+    .hamburger{
+        display: block;
+    }
+    
     .header-menu{
         position: fixed;
+        left: -100%;
         top: 0;
-        right: 0;
         bottom: 0;
-        /* left: 0; */
-        z-index: 2;
-        background: white;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        right: 0;
         flex-direction: column;
+        background-color: var(--white-color);
+        width: 100%;
+        text-align: center;
+        transition:  0.3s;
+        z-index: 2;
+        align-items: flex-end;
         justify-content: center;
-        /* transform: translateX(100%); */
-        width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 1s linear;
     }
-    .header-menu.is-active{
-        opacity: 1;
-        visibility: visible;
+    .menu-item{
+        margin:  16px 0;
     }
-    .header-links{
-        width: 100%;
-        display: block;
-        padding: 15px 25px;
+    .header-menu.actived{
+        left: 0;
     }
-    .header-toggle .header-bars{
-        display: inline-block;
+    /* Slider */
+    .slider-content{
+        left: 110px;
     }
-
+    .panigation{
+        left: 70px;
+    }
     /* Different */
     .different-item{
         flex-direction: column;
@@ -172,6 +183,32 @@
     }
     .global-desc{
         font-size: 20px;
+    }
+    
+        
+    /* Slider */
+
+    .slider-title{
+        font-size: 16px;
+    }
+    .slider-heading{
+        font-size: 50px;
+    }
+    
+    .panigation{
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        flex-direction: row;
+    }
+    .panigation .btn{
+        margin: 0 8px;
+        width: 5px;
+        height: 5px;
+    }
+    .panigation .btn.active{
+        width: 8px;
+        height: 8px;
     }
     /* different */
     .different-list{
