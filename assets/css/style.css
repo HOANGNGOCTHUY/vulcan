@@ -593,6 +593,9 @@ input:checked + .slip:before {
 }
 
 /* 360 */
+.image360{
+    margin: -150px 0;
+}
 .image360-main{
     background: url(../images/outline/360.png) no-repeat ;
     background-size: contain; 
@@ -621,6 +624,7 @@ input:checked + .slip:before {
     transform: translateX(-50%) !important;
     filter: drop-shadow(0 0 1px var(--black-color));
     object-fit: cover;
+    padding: 150px;
 } 
 
  .product-img360 div{

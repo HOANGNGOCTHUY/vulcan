@@ -238,6 +238,17 @@
     .outline-img{
         height: auto;
     }
+    /* 360 */
+    .image360{
+        margin: -50px 0;
+    }
+    .icon-360 img{
+        width: 50px;
+        height: 50px;
+    }
+    .product-img360 img#product{
+        padding: 50px;
+    }
     /* meaning */
     .meaning-item{
         padding: 30px 0;
