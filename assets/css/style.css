@@ -652,19 +652,25 @@ input:checked + .slip:before {
 }
  .bg-yellow{
     background: url(../images/meaning/bg-yellow.png) no-repeat;
-    background-position: -159px center; 
+    background-position: -74px center; 
     background-size: contain;
 }
 
 .bg-pink{
     background: url(../images/meaning/bg-pink.png) no-repeat   ;
-    background-position: right center; 
+    background-position: 822px center;
     background-size: contain;
+    width: 100%;
+    height: 1332px;
+    padding: 0;
 }
 .bg-green{
     background: url(../images/meaning/bg-green.png) no-repeat;
-    background-position: -159px center; 
+    background-position: -74px;
     background-size: contain;
+    width: 100%;
+    height: 1289px;
+    padding-top: 250px;
 
 }
 
