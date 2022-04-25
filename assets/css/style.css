@@ -244,7 +244,7 @@ html, body {
 
 /* FEATURE */
 .feature{
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 .feature-main{
     position: relative;
@@ -319,9 +319,9 @@ html, body {
 } 
 
 /* STORY */
-/* .story{
-    margin-bottom: 70px;
-} */
+.story{
+    margin-bottom: 20px;
+}
 .story-desc{
     margin-bottom: 34px;
 }
