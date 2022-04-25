@@ -451,7 +451,7 @@ html, body {
 }
 .slip:before {
     position: absolute;
-    content: "";
+    content: url(../images/checkbox.png);
     height: 20px;
     width: 33px;
     top: 2px;
