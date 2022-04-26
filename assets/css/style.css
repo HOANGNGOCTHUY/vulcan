@@ -61,7 +61,7 @@ html, body {
     margin-top: 46px;
     margin-bottom: 33px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .header-logo{
@@ -150,7 +150,7 @@ html, body {
     color: var(--black-color);
     position: absolute;
     bottom: 118px;
-    left: 376px;
+    left: 425px;
 
 }
 .slider-title{
@@ -177,7 +177,7 @@ html, body {
   align-items: center;
   position: absolute;
   bottom: 118px;
-  left: 304px;
+  left: 376px;
 
 }
 .panigation .btn{
@@ -547,7 +547,7 @@ input:checked + .slip:before {
 }
 /*outline  */
 .outline{
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 .outline-title{
@@ -663,13 +663,30 @@ input:checked + .slip:before {
     width: 100%;
     height: auto;
 }
-.meaning-item{
+/* .meaning-item{
     padding: 100px 0;
+} */
+.meaning-item{
+    margin-top: -100px;
 }
+.pd-right{
+    padding-right: 239px;
+    
+}
+.pd-left{
+    padding-left: 281px;
+    margin-top: -250px;
+}
+.mr-t{
+    margin-top: -615px;
+}
+/* 
  .bg-yellow{
     background: url(../images/meaning/bg-yellow.png) no-repeat;
-    background-position: -74px center; 
+    background-position: -70px center; 
     background-size: contain;
+    height: 1300px;
+    padding-top: 150px;
 }
 
 .bg-pink{
@@ -689,11 +706,12 @@ input:checked + .slip:before {
     padding-top: 250px;
     margin-top: -200px;
 
-}
+} */
 
 /* Price */
 .price{
     margin-bottom: 110px;
+    margin-top: -380px;
 }
 .price-main{
     display: flex;

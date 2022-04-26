@@ -1,3 +1,41 @@
+@media screen and (max-width: 1440px) {
+    /* slider */
+    .panigation {
+        left: 160px;
+    }
+    .slider-content{
+        left: 265px;
+    }
+    /* deature */
+    .feature-left{
+        display: none;
+    }
+    .feature-right{
+        display: none;
+    }
+    /* sotry */
+    .story-content{
+        padding: 0 100px;
+    }
+    .story-content::before{
+        width: 100%;
+    }
+    .story-item{
+        padding: 30px 50px;
+    }
+    .sotry-description{
+        max-width: 800px;
+    }
+    /* Meaning */
+    .mr-t{
+        margin-top: -400px;
+    }
+    /* price */
+    .price{
+        margin-top: -300px;
+    }
+}
+
 @media screen and (max-width: 1365px) {
     /* Feature */
     .feature{
@@ -48,11 +86,25 @@
     .meaning-heading h1, .meaning-heading .meaning-desc{
         text-align: center;
     }
-    .meading-image{
+    .meaning-item{
+        margin-top: 40px;
+    }
+    .pd-right{
+        padding-right: 100px;
+    }
+    .pd-left{
+        padding-left: 100px;
+        margin-top: -150px;
+    }
+    .mr-t{
+        margin-top: -380px;
+    }
+    /* .meading-image{
         padding: 0 100px;
     }
     .bg-yellow{
         background-position: -174px center;
+        height: 870px;
     }
     .bg-pink{
         height: 870px;
@@ -63,8 +115,11 @@
         background-position: -125px;
         padding-top: 100px;
         margin: 0;
-    }
+    } */
     /* Price */
+    .price{
+        margin-top: -200px;
+    }
     .price-main {
         padding: 0 25px;
     }
@@ -173,12 +228,9 @@
     /* Outline */
 
     /* Meaning */
-    .meading-image{
-        padding: 0 50px;
-    }
-
-    .bg-yellow{
+    /* .bg-yellow{
         background-position: -195px center;
+        height: 700px;
     }
     .bg-pink{
         height: 700px;
@@ -186,6 +238,9 @@
     }
     .bg-green{
        height: 660px;
+    } */
+    .mr-t{
+        margin-top: -300px;
     }
     /* Ex */
     
@@ -286,11 +341,22 @@
         padding: 50px;
     }
     /* meaning */
-    .meaning-item{
+    .pd-right{
+        padding-right: 30px;
+    }
+    .pd-left{
+        margin-top: -100px;
+        padding-left: 30px;
+    }
+    .mr-t{
+        margin-top: -150px;
+    }
+    /* .meaning-item{
         padding: 30px 0;
     }
     .bg-yellow{
         background-position: -40px center;
+        height: 300px;
     }
     .bg-pink{
         height: 300px;
@@ -300,8 +366,11 @@
     .bg-green{
        height: 300px;
        background-position: -30px center;
-    }
+    } */
     /* Price */
+    .price{
+        margin-top: -100px;
+    }
     .price-main {
         flex-direction: column-reverse;
     }
