@@ -642,9 +642,22 @@ input:checked + .slip:before {
 /* Meaning */
 .meaning-main{
     margin-bottom: 70px;
+}
+.meaning-heading{
+    margin-right: 534px;
+    position: relative;
 } 
+.meaning-heading h1{
+    margin-right: 60px;
+}
+.meaning-heading::before{
+    content: url(../images/threesome.png);
+    position: absolute;
+    left: 86%;
+    transform: translateX(-50%) translateY(-50%);
+}
 .meaning-heading h1, .meaning-heading .meaning-desc {
-    text-align: right !important;
+    text-align: right;
 }
 .meaning-content img{
     width: 100%;

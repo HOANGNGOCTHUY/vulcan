@@ -36,6 +36,18 @@
         padding: 0 20px;
     }
     /* Meaning */
+    .meaning-heading{
+        margin: 0;
+    }
+    .meaning-heading::before{
+        left: 50%;
+    }
+    .meaning-heading h1{
+        margin: 0;
+    }
+    .meaning-heading h1, .meaning-heading .meaning-desc{
+        text-align: center;
+    }
     .meading-image{
         padding: 0 100px;
     }
