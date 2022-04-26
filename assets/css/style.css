@@ -532,7 +532,7 @@ input:checked + .slip:before {
 
 /* Detail */
 .detail{
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 .detail-desc{
     margin-bottom: 119px;
@@ -547,11 +547,11 @@ input:checked + .slip:before {
 }
 /*outline  */
 .outline{
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .outline-title{
-    padding-top: 118px;
+    padding-top: 90px;
 }
 .outline-body{
     display: flex;
@@ -643,6 +643,9 @@ input:checked + .slip:before {
 .meaning-main{
     margin-bottom: 70px;
 } 
+.meaning-heading h1, .meaning-heading .meaning-desc {
+    text-align: right !important;
+}
 .meaning-content img{
     width: 100%;
     height: auto;
