@@ -26,6 +26,9 @@
     .sotry-description{
         max-width: 800px;
     }
+    .story-line::before{
+        left: 219px;
+    }
     /* Meaning */
     .mr-t{
         margin-top: -400px;
@@ -57,6 +60,9 @@
     }
     .story-item{
         padding: 30px 50px;
+    }
+    .story-line::before{
+        left: 0;
     }
     /* Detail */
     .detail-img{
@@ -317,6 +323,10 @@
     }
     .controls{
         flex-direction: row;
+    }
+    .story-line::before{
+        left: 0;
+        width: 100%;
     }
     /* Outline */
     .outline-body{
