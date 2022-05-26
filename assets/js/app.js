@@ -105,13 +105,13 @@ hambuger.addEventListener("click", function () {
 //    })
 // *************************************************************************************
 // 360
-var productViewer = new ProductViewer({
-  element: document.getElementById("product_viewer"),
-  imagePath: "./assets/images/360",
-  filePrefix: "img",
-  fileExtension: ".png",
-  numberOfImages: 50,
-});
+// var productViewer = new ProductViewer({
+//   element: document.getElementById("product_viewer"),
+//   imagePath: "./assets/images/360",
+//   filePrefix: "img",
+//   fileExtension: ".png",
+//   numberOfImages: 50,
+// });
 //comment
 var nagis = document.querySelectorAll(".nagi");
 var experiences = document.querySelectorAll(".experience-items");

@@ -669,6 +669,14 @@
     ></script> -->
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/product-viewer.js"></script>
-    <script></script>
+    <script>
+      var productViewer = new ProductViewer({
+        element: document.getElementById("product_viewer"),
+        imagePath: "./assets/images/360",
+        filePrefix: "img",
+        fileExtension: ".png",
+        numberOfImages: 50,
+      });
+    </script>
   </body>
 </html>
