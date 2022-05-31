@@ -7,12 +7,60 @@ hambuger.addEventListener("click", function () {
   hambuger.classList.toggle("actived");
   navMenu.classList.toggle("actived");
 });
-
 // menuItem.forEach(n => n.addEventListener("click", ()=>{
 //     hambuger.classList.remove("actived");
 //     navMenu.classList.remove("actived");
 
 // }))
+
+// Slider
+var btns = document.querySelectorAll(".btn");
+var sliders = document.querySelectorAll(".slider-content");
+
+var currentSlide = 1;
+
+var manualNavSlide = function (manual) {
+  sliders.forEach((slide) => {
+    slide.classList.remove("active");
+
+    btns.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+  });
+  sliders[manual].classList.add("active");
+  btns[manual].classList.add("active");
+};
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    manualNavSlide(i);
+    currentSlide = i;
+  });
+});
+// var repeatSlider = function (activeClass) {
+//   let active = document.getElementsByClassName("active");
+//   let i = 1;
+
+//   var repeaters = () => {
+//     setTimeout(function () {
+//       [...active].forEach((activeSlide) => {
+//         activeSlide.classList.remove("active");
+//       });
+//       sliders[i].classList.add("active");
+//       btns[i].classList.add("active");
+//       i++;
+
+//       if (sliders.length == i) {
+//         i = 0;
+//       }
+//       if (i >= sliders.length) {
+//         return;
+//       }
+//       repeaters();
+//     }, 3000);
+//   };
+//   repeaters();
+// };
+// repeatSlider();
 
 //Slider
 // var btns = document.querySelectorAll('.btn');
