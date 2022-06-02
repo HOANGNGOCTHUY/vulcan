@@ -36,84 +36,31 @@ btns.forEach((btn, i) => {
     currentSlide = i;
   });
 });
-// var repeatSlider = function (activeClass) {
-//   let active = document.getElementsByClassName("active");
-//   let i = 1;
+var repeatSlider = function (activeClass) {
+  let active = document.getElementsByClassName("active");
+  let i = 1;
 
-//   var repeaters = () => {
-//     setTimeout(function () {
-//       [...active].forEach((activeSlide) => {
-//         activeSlide.classList.remove("active");
-//       });
-//       sliders[i].classList.add("active");
-//       btns[i].classList.add("active");
-//       i++;
+  var repeaters = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("active");
+      });
+      sliders[i].classList.add("active");
+      btns[i].classList.add("active");
+      i++;
 
-//       if (sliders.length == i) {
-//         i = 0;
-//       }
-//       if (i >= sliders.length) {
-//         return;
-//       }
-//       repeaters();
-//     }, 3000);
-//   };
-//   repeaters();
-// };
-// repeatSlider();
-
-//Slider
-// var btns = document.querySelectorAll('.btn');
-// var sliders = document.querySelectorAll('.slider-item');
-
-// var currentSlide = 1;
-
-// var manualNav = function (manual){
-//     sliders.forEach((slide) => {
-//         slide.classList.remove('active');
-
-//         btns.forEach((btn) =>{
-//             btn.classList.remove('active');
-//        });
-//     });
-
-//     sliders[manual].classList.add('active');
-//     btns[manual].classList.add('active');
-// }
-
-// btns.forEach((btn,i) => {
-//     btn.addEventListener("click",() =>{
-//          manualNav(i);
-//          currentSlide = i;
-//     });
-// });
-
-// var repeat = function(activeClass){
-//     let active = document.getElementsByClassName('active');
-//     let i = 1;
-
-//     var repeater = () =>{
-//         setTimeout(function(){
-//             [...active].forEach((activeSlide) =>{
-//                 activeSlide.classList.remove('active');
-//             });
-//                 sliders[i].classList.add('active');
-//                 btns[i].classList.add('active');
-//                 i++;
-
-//                 if(sliders.length == i){
-//                     i =0;
-//                 }
-//                 if(i >= sliders.length){
-//                     return ;
-//                 }
-//                 repeater();
-
-//         },3000);
-//     }
-//     repeater();
-// }
-// repeat();
+      if (sliders.length == i) {
+        i = 0;
+      }
+      if (i >= sliders.length) {
+        return;
+      }
+      repeaters();
+    }, 3000);
+  };
+  repeaters();
+};
+repeatSlider();
 
 // -************************************************************
 // 360 độ
@@ -153,66 +100,66 @@ btns.forEach((btn, i) => {
 //    })
 // *************************************************************************************
 // 360
-// var productViewer = new ProductViewer({
-//   element: document.getElementById("product_viewer"),
-//   imagePath: "./assets/images/360",
-//   filePrefix: "img",
-//   fileExtension: ".png",
-//   numberOfImages: 50,
-// });
+var productViewer = new ProductViewer({
+  element: document.getElementById("product_viewer"),
+  imagePath: "./assets/images/360",
+  filePrefix: "img",
+  fileExtension: ".png",
+  numberOfImages: 50,
+});
 //comment
-// var nagis = document.querySelectorAll(".experience-btn");
-// var experiences = document.querySelectorAll(".experience-items");
+var nagis = document.querySelectorAll(".experience-btn");
+var experiences = document.querySelectorAll(".experience-items");
 
-// let count = 1;
+let count = 1;
 
-// var manualNav = function (manual) {
-//   experiences.forEach((experience) => {
-//     experience.classList.remove("change");
+var manualNav = function (manual) {
+  experiences.forEach((experience) => {
+    experience.classList.remove("change");
 
-//     nagis.forEach((nagi) => {
-//       nagi.classList.remove("change");
-//     });
-//   });
+    nagis.forEach((nagi) => {
+      nagi.classList.remove("change");
+    });
+  });
 
-//   experiences[manual].classList.add("change");
-//   nagis[manual].classList.add("change");
-// };
+  experiences[manual].classList.add("change");
+  nagis[manual].classList.add("change");
+};
 
-// nagis.forEach((nagi, i) => {
-//   nagi.addEventListener("click", () => {
-//     manualNav(i);
-//     count = i;
-//   });
-// });
+nagis.forEach((nagi, i) => {
+  nagi.addEventListener("click", () => {
+    manualNav(i);
+    count = i;
+  });
+});
 
-//autoplay navigation
+// autoplay navigation
 
-// var repeat = function (activeClass) {
-//   let active = document.getElementsByClassName("change");
-//   let i = 1;
+var repeat = function (activeClass) {
+  let active = document.getElementsByClassName("change");
+  let i = 1;
 
-//   var repeater = () => {
-//     setTimeout(function () {
-//       [...active].forEach((activeSlide) => {
-//         activeSlide.classList.remove("change");
-//       });
-//       experiences[i].classList.add("change");
-//       nagis[i].classList.add("change");
-//       i++;
+  var repeater = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("change");
+      });
+      experiences[i].classList.add("change");
+      nagis[i].classList.add("change");
+      i++;
 
-//       if (experiences.length == i) {
-//         i = 0;
-//       }
-//       if (i >= experiences.length) {
-//         return;
-//       }
-//       repeater();
-//     }, 3000);
-//   };
-//   repeater();
-// };
-// repeat();
+      if (experiences.length == i) {
+        i = 0;
+      }
+      if (i >= experiences.length) {
+        return;
+      }
+      repeater();
+    }, 3000);
+  };
+  repeater();
+};
+repeat();
 // *****************************************************************
 // Show hide img
 var check = document.getElementById("checkbox-img");
