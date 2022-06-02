@@ -1,32 +1,29 @@
-
-.global-desc{
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 40px;
-    color: var(--black-color);
-    text-align: center;
-
+.global-desc {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--black-color);
+  text-align: center;
 }
-.global-title{
-    padding-top: 90px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 40px;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.global-title {
+  padding-top: 90px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
-.global-name{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+.global-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-
-.btn-click{
+/* .btn-click{
     position: relative;
     background: var(--primary-color);
     color: var(--white-color);
@@ -49,4 +46,307 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+} */
+
+/* .btn-click {
+  color: var(--white-color);
+  background: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 38px;
+  margin: 0 15px;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s;
+  text-decoration: none;
+}
+.btn-click:focus,
+.btn-click:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
+  transform: translateY(-6px);
+}
+.btn-click:before {
+  content: "";
+  min-width: calc(100% + 17px);
+  min-height: calc(100% + 17px);
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 0px 5px rgb(215 32 70 / 20%);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn-click:hover:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+} */
+/* 
+.cart-buy {
+  display: inline-block;
+  padding: 10px 38px;
+  margin: 15px;
+  background-color: var(--primary-color);
+  position: relative;
+  border-radius: 20px;
+  color: var(--white-color);
+}
+.cart-buy span {
+  position: absolute;
+  background: blue;
+  display: block;
+  transition: all 0.25s linear;
+  border-radius: 20px;
+}
+
+.cart-buy span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 0;
+  border: 0;
+  height: 3px;
+}
+.cart-buy span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 0;
+  transition-delay: 0.25s;
+  border-radius: 10px;
+}
+.cart-buy span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  transition-delay: 0.5s;
+}
+
+.cart-buy span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  transition-delay: 0.75s;
+}
+.cart-buy:hover span:nth-child(odd) {
+  width: 100%;
+}
+.cart-buy:hover span:nth-child(even) {
+  height: 100%;
+}
+.btn-click {
+  text-decoration: none;
+  color: var(--white-color);
+} */
+
+.btn-cont {
+  text-align: center;
+  margin-top: 200px;
+}
+.btn-cont .btn {
+  position: relative;
+  padding: 10px 28px;
+  border: 1px solid rgba(215, 32, 70, 0.2);
+  /* color: var(--black-color); */
+  color: white;
+  text-decoration: none;
+  font-size: 1.125em;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+.btn-cont .btn:hover {
+  border: none;
+}
+.btn-cont .btn:hover .line-1 {
+  -webkit-animation: move1 1500ms infinite ease;
+  animation: move1 1500ms infinite ease;
+}
+.btn-cont .btn:hover .line-2 {
+  -webkit-animation: move2 1500ms infinite ease;
+  animation: move2 1500ms infinite ease;
+}
+.btn-cont .btn:hover .line-3 {
+  -webkit-animation: move3 1500ms infinite ease;
+  animation: move3 1500ms infinite ease;
+}
+.btn-cont .btn:hover .line-4 {
+  -webkit-animation: move4 1500ms infinite ease;
+  animation: move4 1500ms infinite ease;
+}
+.btn-cont .line-1 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  background-color: blue;
+  left: 0;
+  bottom: 0;
+}
+.btn-cont .line-2 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: blue;
+  left: 0;
+  top: 0;
+}
+.btn-cont .line-3 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  background-color: blue;
+  right: 0;
+  top: 0;
+}
+.btn-cont .line-4 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: blue;
+  right: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+@-webkit-keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@-webkit-keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@-webkit-keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+@keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
 }

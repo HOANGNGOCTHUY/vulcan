@@ -541,12 +541,13 @@ body {
 }
 .slip:before {
   position: absolute;
-  content: url(../images/checkbox.png);
+  content: url(../images/story/iconright.png);
   height: 20px;
   width: 33px;
   top: 2px;
   left: 4px;
   bottom: 2px;
+  line-height: 24px;
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -702,7 +703,7 @@ input:checked + .slip:before {
 }
 #product_viewer {
   cursor: pointer;
-  padding: 100px 150px 150px 150px;
+  padding: 100px 150px 150px 170px;
 }
 #product_viewer img {
   width: 100%;

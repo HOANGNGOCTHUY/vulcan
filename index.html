@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/css/fontello.css" />
   </head>
+  <style>
+    .test-image {
+      width: 100%;
+      height: 100vh;
+    }
+    .test-image img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
   <body>
     <div id="app">
       <!-- header -->
-      <section class="mb70px header">
+      <!-- <section class="mb70px header">
         <div class="container">
           <div class="header-main">
             <div class="header-logo">
@@ -49,8 +59,17 @@
             </div>
           </div>
         </div>
+      </section> -->
+      <section class="test">
+        <div class="container-fluid">
+          <div class="test-image">
+            <img
+              src="https://zicxa.com/pub/media/content/hinh-nen-4k-dep-cho-may-tinh-laptop-ipad-dien-thoai-di-dong-60.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </section>
-
       <!-- Slider -->
       <section class="mb70px slider">
         <div class="container-fluid">
@@ -233,9 +252,22 @@
                 </div>
               </div>
             </div>
-            <div class="cart-buy">
-              <a href="#" class="btn-click btn-checkout">đặt hàng ngay</a>
+            <div class="btn-cont">
+              <a class="btn" href="#">
+                đặt hàng ngay
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+                <span class="line-4"></span>
+              </a>
             </div>
+            <!-- <div class="cart-buy">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <a href="#" class="btn-click btn-checkout">đặt hàng ngay</a>
+            </div> -->
           </div>
         </div>
       </section>
