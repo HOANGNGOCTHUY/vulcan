@@ -24,11 +24,11 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 } */
-.left.vulcan-heading::before {
-  position: absolute;
-  left: 0%;
-  margin-left: 30px;
-  transform: translateX(-50%) translateY(-50%);
+.vulcan-image {
+  text-align: center;
+}
+.left.vulcan-image {
+  text-align: left;
 }
 
 /* *********************** */
