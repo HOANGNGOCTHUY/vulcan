@@ -7,12 +7,16 @@
     <title>Document</title>
     <style>
       .cart-buy {
+        text-align: center;
       }
       .btn {
         position: relative;
         /* display: block; */
         display: inline-block;
-        border-radius: 30px;
+        border-radius: 20px;
+        background: #d72046;
+        width: 160px;
+        height: 40px;
       }
 
       .btn span {
@@ -20,11 +24,17 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
       }
-      /* .btn svg {
+      .btn svg {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .btn svg rect {
@@ -37,9 +47,9 @@
 
       .btn:hover svg rect {
         stroke-width: 4;
-        stroke-dasharray: 110, 350;
+        stroke-dasharray: 104, 350;
         stroke-dashoffset: 255;
-      } */
+      }
     </style>
   </head>
 
@@ -49,8 +59,14 @@
         <svg width="180" height="60">
           <defs>
             <linearGradient id="grad1">
-              <stop offset="0%" stop-color="#FF8282" />
-              <stop offset="100%" stop-color="#E178ED" />
+              <stop
+                offset="0%"
+                style="stop-color: rgb(215, 32, 70); stop-opacity: 0.4"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: rgb(215, 32, 70); stop-opacity: 0.4"
+              />
             </linearGradient>
           </defs>
           <rect
