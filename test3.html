@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox</title>
+    <style>
+      /* copy from here */
+      .scrolldown {
+        --color: #d72046;
+        --sizeX: 30px;
+        --sizeY: 70px;
+        position: relative;
+        height: var(--sizeX);
+        width: var(--sizeY);
+        border: calc(var(--sizeX) / 10) solid var(--color);
+        border-radius: 50px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      .scrolldown::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6px;
+        height: 6px;
+        background-color: var(--color);
+        border-radius: 100%;
+        animation: scrolldown-anim 2s infinite;
+        box-shadow: -10px 0px 3px 1px #000;
+      }
+
+      @keyframes scrolldown-anim {
+        /* 0% {
+          opacity: 0;
+          left: 10px;
+        }
+        40% {
+          opacity: 1;
+          left: 40px;
+        }
+        80% {
+          left: 50px;
+          opacity: 0;
+        }
+        100% {
+          left: 60px;
+          opacity: 0;
+        } */
+        from {
+          left: 20px;
+        }
+        to {
+          left: 50px;
+          opacity: 0;
+        }
+      }
+
+      .chevrons {
+        margin-left: 70px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      .chevrondown {
+        position: relative;
+        border: solid var(--color);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        transform: translateY(-50%) rotate(-50deg);
+      }
+
+      .chevrondown:nth-child(odd) {
+        animation: pulse 500ms ease infinite alternate;
+      }
+      .chevrondown:nth-child(even) {
+        animation: pulse 500ms ease infinite alternate 250ms;
+      }
+      @keyframes pulse {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 0.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrolldown">
+      <div class="chevrons">
+        <div class="chevrondown"></div>
+        <div class="chevrondown"></div>
+      </div>
+    </div>
+  </body>
+</html>

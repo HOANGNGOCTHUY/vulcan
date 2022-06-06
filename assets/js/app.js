@@ -162,11 +162,23 @@ var repeat = function (activeClass) {
 repeat();
 // *****************************************************************
 // Show hide img
-var check = document.getElementById("checkbox-img");
+// var check = document.getElementById("checkbox-img");
+// var img1 = document.getElementById("img-1");
+// var img2 = document.getElementById("img-2");
+// check.addEventListener("click", function () {
+//   if (check.checked == true) {
+//     img1.style.display = "none";
+//     img2.style.display = "block";
+//   } else {
+//     img1.style.display = "block";
+//     img2.style.display = "none";
+//   }
+// });
+var check = document.getElementById("scrolldown");
 var img1 = document.getElementById("img-1");
 var img2 = document.getElementById("img-2");
 check.addEventListener("click", function () {
-  if (check.checked == true) {
+  if (check.classList.toggle("checked")) {
     img1.style.display = "none";
     img2.style.display = "block";
   } else {
