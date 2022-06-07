@@ -5,65 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SVG</title>
+    <style>
+      .test1 {
+        position: relative;
+      }
+      .svg-image {
+        position: absolute;
+        top: 20%;
+        z-index: -1;
+        width: 700px;
+        height: 250px;
+      }
+      .svg-image img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
-    <svg viewBox="0 0 100 100" style="border: blue solid">
-      <path stroke="green" stroke-width=".2" d="M10 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M20 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M30 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M40 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M50 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M60 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M70 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M80 0 V100" />
-      <path stroke="green" stroke-width=".2" d="M90 0 V100" />
+    <div class="test1">
+      <div class="svg-heading">
+        <div class="svg-stt">01</div>
+        <div class="svg-title">Mặt bàn</div>
+      </div>
+      <div class="svg-image">
+        <img src="./assets/images/meaning/table-mt.png" alt="" />
+      </div>
+      <svg viewBox="0 0 100 100" style="border: blue solid">
+        <path stroke="green" stroke-width=".2" d="M10 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M20 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M30 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M40 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M50 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M60 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M70 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M80 0 V100" />
+        <path stroke="green" stroke-width=".2" d="M90 0 V100" />
 
-      <path stroke="green" stroke-width=".2" d="M0 10 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 20 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 30 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 40 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 50 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 60 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 70 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 80 H100" />
-      <path stroke="green" stroke-width=".2" d="M0 90 H100" />
-      <!--  M = di chuyển
-
-            L = lineto
-
-            H = đường kẻ ngang
-
-            V = đường thẳng đứng
-
-            C = đường cong
-
-            S = đường cong mịn
-
-            Q = đường cong Bézier bậc hai
-
-            T = đường cong Bézier bậc hai trơn
-
-            A = Arc hình elip
-
-            Z = đường gần
-            -->
-      <use xlink:href="./assets/images/360/img01.png" alt=""></use>
-      <path
-        stroke="blue"
-        stroke-dasharray="1,1"
-        stroke-width=".3"
-        d="M20 10 H50 V0 L60 20 L50 40 V30 H20 V10 "
-        fill="none"
-      />
-      <circle
-        cx="20"
-        cy="20"
-        r="2"
-        stroke="none"
-        stroke-width="0.1"
-        fill="red"
-      />
-      <text x="60" y="20" fill="red" style="font-size: 5px">I love SVG!</text>
-    </svg>
+        <path stroke="green" stroke-width=".2" d="M0 10 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 20 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 30 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 40 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 50 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 60 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 70 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 80 H100" />
+        <path stroke="green" stroke-width=".2" d="M0 90 H100" />
+        <!--  M = di chuyển
+  
+              L = lineto
+  
+              H = đường kẻ ngang
+  
+              V = đường thẳng đứng
+  
+              C = đường cong
+  
+              S = đường cong mịn
+  
+              Q = đường cong Bézier bậc hai
+  
+              T = đường cong Bézier bậc hai trơn
+  
+              A = Arc hình elip
+  
+              Z = đường gần
+              -->
+        <use xlink:href="./assets/images/360/img01.png" alt=""></use>
+        <path
+          stroke="blue"
+          stroke-dasharray="1,1"
+          stroke-width=".3"
+          d="M20 10 H50 V0 L60 20 L50 40 V30 H20 V10 "
+          fill="none"
+        />
+        <circle
+          cx="20"
+          cy="20"
+          r="2"
+          stroke="none"
+          stroke-width="0.1"
+          fill="red"
+        />
+        <text x="60" y="20" fill="red" style="font-size: 5px">I love SVG!</text>
+      </svg>
+    </div>
   </body>
 </html>
