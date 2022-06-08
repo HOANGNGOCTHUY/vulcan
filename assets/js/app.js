@@ -1,3 +1,23 @@
+// Scroll
+$(document).ready(function () {
+  var showgotoTop = 300;
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= showgotoTop) {
+      $("#backtop").fadeIn();
+    } else {
+      $("#backtop").fadeOut();
+    }
+  });
+  $("#backtop").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      2000
+    );
+  });
+});
+
 // Bars menu
 
 const hambuger = document.querySelector(".hamburger");
@@ -7,11 +27,6 @@ hambuger.addEventListener("click", function () {
   hambuger.classList.toggle("actived");
   navMenu.classList.toggle("actived");
 });
-// menuItem.forEach(n => n.addEventListener("click", ()=>{
-//     hambuger.classList.remove("actived");
-//     navMenu.classList.remove("actived");
-
-// }))
 
 // Slider
 var btns = document.querySelectorAll(".btn");
@@ -61,44 +76,6 @@ var repeatSlider = function (activeClass) {
   repeaters();
 };
 repeatSlider();
-
-// -************************************************************
-// 360 độ
-// $(document).ready(function(){
-//     //Load the image URLs into an Array.
-//            var arr = new Array();
-//            $("#dvImages img").each(function () {
-//                arr.push($(this).attr("src"));
-//            });
-
-//            //Set the first image URL as source for the Product.
-//            $("#product").attr("src", arr[0]);
-
-//            // //Click mode.
-//            // $("#product1").threesixty({ images: arr,
-//            //     method: 'click',
-//            //     sensibility: 1
-//            // });
-
-//            //MouseMove mode.
-//            $("#product").threesixty({ images: arr,
-//                method: 'mousemove',
-//                sensibility: 1
-//            });
-
-//            //Automatic mode.
-//         //    $("#product").threesixty({ images: arr,
-//         //        method: 'auto',
-//         //        direction: 'forward',
-//         //        autoscrollspeed: 1000
-//         //    });
-//            setTimeout(function(){
-//            $(".progressBg").hide();
-//            $(".overlay").hide();
-//              }, 3000);
-
-//    })
-// *************************************************************************************
 // 360
 var productViewer = new ProductViewer({
   element: document.getElementById("product_viewer"),
