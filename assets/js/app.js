@@ -5,7 +5,7 @@ $(document).ready(function () {
     if ($(this).scrollTop() >= showgotoTop) {
       $("#backtop").fadeIn();
     } else {
-      $("#backtop").fadeOut();
+      // $("#backtop").fadeOut();
     }
   });
   $("#backtop").click(function () {
@@ -20,13 +20,13 @@ $(document).ready(function () {
 
 // Bars menu
 
-const hambuger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".header-menu");
-const menuItem = document.querySelector("menu-item");
-hambuger.addEventListener("click", function () {
-  hambuger.classList.toggle("actived");
-  navMenu.classList.toggle("actived");
-});
+// const hambuger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".header-menu");
+// const menuItem = document.querySelector("menu-item");
+// hambuger.addEventListener("click", function () {
+//   hambuger.classList.toggle("actived");
+//   navMenu.classList.toggle("actived");
+// });
 
 // Slider
 var btns = document.querySelectorAll(".btn");
@@ -76,6 +76,7 @@ var repeatSlider = function (activeClass) {
   repeaters();
 };
 repeatSlider();
+
 // 360
 var productViewer = new ProductViewer({
   element: document.getElementById("product_viewer"),
@@ -84,6 +85,7 @@ var productViewer = new ProductViewer({
   fileExtension: ".png",
   numberOfImages: 50,
 });
+
 //comment
 var nagis = document.querySelectorAll(".experience-btn");
 var experiences = document.querySelectorAll(".experience-items");
