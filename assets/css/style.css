@@ -408,7 +408,7 @@ body {
 .different-text {
   font-weight: 300;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 20px;
   letter-spacing: 0.02em;
   color: #5c5c5c;
   max-width: 270px;
@@ -486,6 +486,7 @@ body {
 }
 .cart-buy {
   text-align: center;
+  margin-top: 90px;
 }
 
 /* .feature-title {
@@ -889,7 +890,9 @@ input:checked + .slip:before {
 .outline {
   /* margin-bottom: 90px; */
 }
-
+.outline-capital{
+  display: none;
+}
 .outline-title {
   padding-top: 90px;
 }
