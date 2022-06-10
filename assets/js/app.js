@@ -31,6 +31,8 @@ $(document).ready(function () {
 // Slider
 var btns = document.querySelectorAll(".btn");
 var sliders = document.querySelectorAll(".slider-content");
+// var medias = document.querySelectorAll(".media-image");
+// var mediaBtns = document.querySelectorAll(".media-btn");
 
 var currentSlide = 1;
 
@@ -42,6 +44,16 @@ var manualNavSlide = function (manual) {
       btn.classList.remove("active");
     });
   });
+  // medias.forEach((media) => {
+  //   media.classList.remove("activeddd");
+
+  //   mediaBtns.forEach((btn) => {
+  //     btn.classList.remove("activeddd");
+  //   });
+  // });
+  // medias[manual].classList.add("activeddd");
+  // mediaBtns[manual].classList.add("activeddd");
+
   sliders[manual].classList.add("active");
   btns[manual].classList.add("active");
 };
@@ -51,19 +63,36 @@ btns.forEach((btn, i) => {
     currentSlide = i;
   });
 });
+// mediaBtns.forEach((btn, i) => {
+//   btn.addEventListener("click", () => {
+//     manualNavSlide(i);
+//     currentSlide = i;
+//   });
+// });
 var repeatSlider = function (activeClass) {
   let active = document.getElementsByClassName("active");
+  // let activeddd = document.getElementsByClassName("activeddd");
   let i = 1;
 
   var repeaters = () => {
     setTimeout(function () {
+      // [...activeddd].forEach((activedddSlide) => {
+      //   activedddSlide.classList.remove("activeddd");
+      // });
       [...active].forEach((activeSlide) => {
         activeSlide.classList.remove("active");
       });
+      // medias[i].classList.add("activeddd");
+      // mediaBtns[i].classList.add("activeddd");
       sliders[i].classList.add("active");
       btns[i].classList.add("active");
       i++;
-
+      // if (medias.length == i) {
+      //   i = 0;
+      // }
+      // if (i >= medias.length) {
+      //   return;
+      // }
       if (sliders.length == i) {
         i = 0;
       }

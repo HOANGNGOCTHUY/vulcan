@@ -714,4 +714,59 @@
     font-size: 12px;
     line-height: 14px;
   }
+
+  /* Meaning */
+  /* .price {
+    display: none;
+  }
+  
+  path {
+    display: none;
+  }
+  circle {
+    display: none;
+  }
+  .table-group {
+    display: none;
+  }
+  .meaningone-img img {
+    width: 100%;
+    height: auto;
+  }
+   */
+  .svg-headingone {
+    display: none;
+  }
+  .meaning {
+    margin-bottom: 500px;
+  }
+  .meaningone-img {
+    left: 0;
+  }
+  .meaningone-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: -100px;
+  }
+  .svg-image img {
+  }
+  .table-meaningone {
+    display: none;
+  }
+  .table-first {
+    right: 0;
+    top: 50%;
+    border: 1px solid blue;
+    display: none;
+  }
+  .hihi {
+    display: none;
+  }
+  .thuy {
+    r: 10;
+  }
+  .thuy:hover .table-first {
+    display: block;
+  }
 }

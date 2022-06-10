@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCROLL</title>
+  </head>
+  <style>
+    /*Some styles for the page - - - - - - - -.*/
+    .test-link {
+      position: absolute;
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #d72406;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .test-link::before {
+      content: "";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      border: 1px solid yellow;
+    }
+
+    .test-link:hover {
+      background: #89fad0;
+    }
+    .test-item {
+      list-style-type: none;
+      margin: 30px 0;
+      height: 30px;
+      width: 30px;
+      position: relative;
+      border-radius: 50%;
+    }
+    .scroll-bar {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+    }
+    .test-item.inSection {
+      border: 1px solid green;
+    }
+
+    /* .test-list {
+      position: relative;
+    }
+    .test-list::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: blue;
+      right: 21%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    } */
+    /*END of styles - - - - - - - - - - -.*/
+
+    /*Class to add to the nav menu when viewport shows any secction.*/
+
+    section#phacthao {
+      height: 500px;
+    }
+    section#cauchuyen {
+      background: red;
+    }
+    section#phacthao {
+      background: orange;
+    }
+    section#scroll360 {
+      background: black;
+    }
+    section#lienhe {
+      background: #888;
+    }
+  </style>
+  <body>
+    <div class="scroll-bar">
+      <ul class="test-list">
+        <li class="test-item inSection">
+          <a class="test-link" href="#one"> <span></span> </a>
+        </li>
+        <li class="test-item">
+          <a class="test-link" href="#two"></a>
+        </li>
+        <li class="test-item"><a class="test-link" href="#three"></a></li>
+        <li class="test-item"><a class="test-link" href="#four"></a></li>
+        <li class="test-item">
+          <a class="test-link" href="#five"> <span></span> </a>
+        </li>
+        <li class="test-item">
+          <a class="test-link" href="#six"></a>
+        </li>
+        <li class="test-item"><a class="test-link" href="#seven"></a></li>
+        <li class="test-item"><a class="test-link" href="#eight"></a></li>
+      </ul>
+    </div>
+
+    <div class="wrap">
+      <section id="one">
+        <p>section one</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+        explicabo, assumenda molestias magni debitis atque asperiores aperiam
+        tempore ex perspiciatis. Officiis optio laborum quis distinctio nostrum
+        at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.
+      </section>
+      <section id="two">
+        <p>section two</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+        explicabo, assumenda molestias magni debitis atque asperiores aperiam
+        tempore ex perspiciatis. Officiis optio laborum quis distinctio nostrum
+        at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.
+      </section>
+      <section id="three">
+        <p>section three</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+        explicabo, assumenda molestias magni debitis atque asperiores aperiam
+        tempore ex perspiciatis. Officiis optio laborum quis distinctio nostrum
+        at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.
+      </section>
+      <section id="four">
+        <p>section four</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+        explicabo, assumenda molestias magni debitis atque asperiores aperiam
+        tempore ex perspiciatis. Officiis optio laborum quis distinctio nostrum
+        at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.
+      </section>
+      <section id="five">
+        <p>section one</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+        explicabo, assumenda molestias magni debitis atque asperiores aperiam
+        tempore ex perspiciatis. Officiis optio laborum quis distinctio nostrum
+        at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.
+      </section>
+      <section id="six">
+        <p>section two</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+        explicabo, assumenda molestias magni debitis atque asperiores aperiam
+        tempore ex perspiciatis. Officiis optio laborum quis distinctio nostrum
+        at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Enim explicabo, assumenda molestias
+        magni debitis atque asperiores aperiam tempore ex perspiciatis. Officiis
+        optio laborum quis distinctio nostrum at voluptate ullam iure.Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Enim explicabo,
+        assumenda molestias magni debitis atque asperiores aperiam tempore ex
+        perspiciatis. Officiis optio laborum quis distinctio nostrum at
+        voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Enim explicabo, assumenda molestias magni debitis atque asperiores
+        aperiam tempore ex perspiciatis. Officiis optio laborum quis distinctio
+        nostrum at voluptate ullam iure.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Enim explicabo, assumenda molestias magni debitis
+        atque asperiores aperiam tempore ex perspiciatis. Officiis optio laborum
+        quis distinctio nostrum at voluptate ullam iure.
+      </section>
+      <section id="seven">
+        <p>section three</p>
+      </section>
+      <section id="eight">
+        <p>section four</p>
+      </section>
+    </div>
+  </body>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+  <script>
+    function menuOnScroll(mySection, myMenu, myClass) {
+      $(window).scroll(function () {
+        var elScroll = $(window).scrollTop();
+        $(mySection).each(function (i) {
+          if ($(this).offset().top <= elScroll) {
+            $(myMenu).removeClass(myClass);
+            $(myMenu).eq(i).addClass(myClass);
+          }
+        });
+      });
+    }
+    menuOnScroll("section", "div ul li", "inSection");
+    function scrollToAnyPointLi(navItem) {
+      $(navItem).click(function (e) {
+        e.preventDefault();
+      });
+    }
+    //Call Function
+    scrollToAnyPointLi("div ul li");
+
+    menuOnScroll("section", "div ul li a", "aaa");
+    function scrollToAnyPoint(navItem) {
+      var getAttr;
+      $(navItem).click(function (e) {
+        e.preventDefault();
+        getAttr = $(this).attr("href");
+        var toSection = $(getAttr).offset().top;
+        $("html, body").animate({ scrollTop: toSection }, 1000);
+      });
+    }
+    // Call Function
+    scrollToAnyPoint("div ul li a");
+  </script>
+</html>
