@@ -112,7 +112,7 @@ var productViewer = new ProductViewer({
   imagePath: "./assets/images/360",
   filePrefix: "img",
   fileExtension: ".png",
-  numberOfImages: 50,
+  numberOfImages: 10,
 });
 
 //comment
