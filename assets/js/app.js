@@ -112,7 +112,7 @@ var productViewer = new ProductViewer({
   imagePath: "./assets/images/360",
   filePrefix: "img",
   fileExtension: ".png",
-  numberOfImages: 10,
+  numberOfImages: 50,
 });
 
 //comment
@@ -185,13 +185,19 @@ repeat();
 var check = document.getElementById("scrolldown");
 var img1 = document.getElementById("img-1");
 var img2 = document.getElementById("img-2");
+var story1 = document.getElementById("story-1");
+var story2 = document.getElementById("story-2");
 check.addEventListener("click", function () {
   if (check.classList.toggle("checked")) {
     img1.style.display = "none";
     img2.style.display = "block";
+    story1.style.display = "none";
+    story2.style.display = "block";
   } else {
     img1.style.display = "block";
     img2.style.display = "none";
+    story1.style.display = "block";
+    story2.style.display = "none";
   }
 });
 // Slide story
@@ -209,4 +215,22 @@ prevBtn.addEventListener("click", function () {
   storys[curentIndex].classList.remove("story-active");
   curentIndex = (curentIndex - 1 + storys.length) % storys.length;
   storys[curentIndex].classList.add("story-active");
+});
+
+// Video
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
 });
