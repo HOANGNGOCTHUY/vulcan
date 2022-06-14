@@ -267,7 +267,7 @@ body {
   font-size: 20px;
   line-height: 250%;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .slider-heading {
@@ -366,7 +366,132 @@ body {
   max-width: 270px;
   width: 100%;
 }
+/* PRE ORDER */
 
+.preorder-image img {
+  width: 100%;
+  height: 100%;
+}
+.preoder-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 100px;
+}
+.preorder-left {
+}
+.preorder-heading {
+  margin-bottom: 42px;
+}
+.preorder-name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: var(--black-color);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--primary-color);
+}
+.preorder-title {
+  margin-left: 26px;
+  font-family: "Poiret One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  color: var(--black-color);
+}
+.preorder-list {
+}
+.preorder-list_name {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--primary-color);
+  margin: 12px 0;
+}
+.preorder-item {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--black-color);
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+.preorder-item span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.preorder-detail_image {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.preorder-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.preorder-img img {
+  width: 100%;
+  height: 100%;
+}
+.preorder-detail_image_left {
+  width: 50%;
+  /* margin-right: 30px; */
+}
+.preorder-detail_image_right {
+  flex: 1;
+}
+.preorder-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+.preorder-price,
+.preorder-click {
+  text-align: center;
+}
+.preorder-price {
+  margin-bottom: 45px;
+}
+.preorder-new {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
+  color: var(--primary-color);
+  position: relative;
+  margin-bottom: 13px;
+}
+.preorder-new::before {
+  content: "";
+  position: absolute;
+  /* width: 1px; */
+  height: 80%;
+  border: 1px solid var(--primary-color);
+  left: 0px;
+  top: 50%;
+  transform: rotate(-45deg) translateY(-70%);
+}
+.preorder-old {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #c4c4c4;
+}
+.preorder-sales {
+  display: block;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
 /* FEATURE */
 .feature {
   /* margin-bottom: 20px; */
@@ -412,7 +537,7 @@ body {
 }
 .feature-description {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
 }
 .feature-image {
@@ -493,6 +618,9 @@ body {
 .story {
   /* margin-bottom: 20px; */
 }
+.story-capital {
+  display: none;
+}
 .story-img {
   width: 950px;
   height: 800px;
@@ -501,6 +629,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: 0;
 }
 
 /* Ẩn ảnh */
@@ -929,14 +1058,16 @@ input:checked + .slip:before {
 }
 .content360 {
   position: absolute;
-  top: 60%;
-  right: 0;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
 }
 .content360 span {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #c4c4c4;
 }
 
 /* Meaning */
@@ -1359,6 +1490,9 @@ input:checked + .slip:before {
   /* margin-bottom: 110px;
   margin-top: -380px; */
 }
+.price-capital {
+  display: none;
+}
 .price-main {
   display: flex;
   align-items: center;
@@ -1377,7 +1511,7 @@ input:checked + .slip:before {
   /* or 114% */
   color: var(--black-color);
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .price-title p {
   font-family: "Poiret One";
@@ -1401,9 +1535,9 @@ input:checked + .slip:before {
   margin-bottom: 26px;
 }
 .price-price {
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 40px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
   color: var(--primary-color);
   position: relative;
   padding-left: 72px;
@@ -1422,7 +1556,7 @@ input:checked + .slip:before {
 .price-desc {
   text-align: justify;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   color: var(--black-color);
   margin-bottom: 41px;
@@ -1458,8 +1592,9 @@ input:checked + .slip:before {
 }
 
 .media-big {
-  width: 540px;
-  height: 874px;
+  /* width: 540px;
+  height: 874px; */
+  width: 50%;
 }
 .media-img {
   width: 100%;
@@ -1467,6 +1602,7 @@ input:checked + .slip:before {
   object-fit: cover;
 }
 .media-small {
+  flex: 1;
   margin-left: 30px;
   display: flex;
   flex-direction: column;
@@ -1484,8 +1620,10 @@ input:checked + .slip:before {
 }
 .media-small_up,
 .media-small_down {
-  width: 600px;
-  height: 422px;
+  /* width: 600px;
+  height: 422px; */
+  width: 100%;
+  height: 442px;
 }
 .video-item {
   /* width: calc(100% / 3); */
@@ -1603,9 +1741,11 @@ input:checked + .slip:before {
 
 .experience-avt,
 .experience-nagi {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  bottom: 2px;
 }
 .experience-btn {
   width: 5px;
@@ -1627,6 +1767,7 @@ input:checked + .slip:before {
 }
 .experience-name {
   color: var(--white-color);
+  text-align: right;
 }
 /* .experience-body {
   margin-left: 40px;
@@ -1748,7 +1889,8 @@ input:checked + .slip:before {
 
 .contact-body {
   margin-left: 30px;
-  width: 60%;
+  max-width: 505px;
+  width: 100%;
 }
 .contact-heading {
 }
@@ -1757,7 +1899,6 @@ input:checked + .slip:before {
 }
 .contact-desc {
   text-align: left;
-  max-width: 505px;
   margin-bottom: 36px;
 }
 .contact-content {
