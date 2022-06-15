@@ -112,6 +112,7 @@
   z-index: 1;
   transition: all 0.3s ease-in-out 0s;
   text-decoration: none;
+  cursor: pointer;
 }
 .btn-click:focus,
 .btn-click:hover {
