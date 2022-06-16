@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .background {
+        position: relative;
+      }
+      .line1 {
+        width: 0;
+        height: 1px;
+        /* border-bottom: 2px dashed blue; */
+        -webkit-transform: translateY(20px) translateX(5px) rotate(-30deg);
+        position: absolute;
+        /* top: -33px;
+        left: -13px; */
+        top: 0;
+        left: 0;
+        background: blue;
+      }
+      .line2 {
+        width: 100px;
+        height: 1px;
+        border-bottom: 2px dashed blue;
+        position: absolute;
+        right: -207px;
+        top: 0;
+      }
+      .image {
+        position: absolute;
+        right: -300px;
+        top: 0;
+      }
+      .text {
+        position: absolute;
+        right: -117px;
+        top: 0;
+      }
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: red;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+      }
+      .line1,
+      .line2 {
+        transition: all linear 3s;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .circle:hover .line1 {
+        width: 120px;
+        opacity: 1;
+        visibility: visible;
+      }
+      /* .circle:hover .line1 {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .circle:hover .line2 {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 3s;
+      } */
+    </style>
+    <div class="circle">
+      <div class="background">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <span class="text"> Thuyr dep tria </span>
+        <div class="image">
+          <img src="./assets/images/meaning/detail-1.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
