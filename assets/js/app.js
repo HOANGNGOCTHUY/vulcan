@@ -205,6 +205,7 @@ check.addEventListener("click", function () {
     story2.style.display = "none";
   }
 });
+ 
 // Slide story
 var storys = document.querySelectorAll(".story-item");
 var nextBtn = document.querySelector(".next-btn");

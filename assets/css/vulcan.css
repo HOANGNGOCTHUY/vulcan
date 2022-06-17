@@ -1186,6 +1186,7 @@ input:checked + .slip:before {
 .meaning-main {
   overflow: hidden;
 }
+
 .svg-stt {
   font-weight: 100;
   font-size: 50px;
@@ -1285,7 +1286,34 @@ input:checked + .slip:before {
   background: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1;
+  /* z-index: 1; */
+}
+.meaning-circle::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: zoom 3s infinite;
+  box-shadow: 0 0 5px 0px var(--primary-color);
+}
+@keyframes zoom{
+  0% {
+    width: 6px;
+    height: 6px;
+  }
+  50% {
+    width: 8px;
+    height: 8px;
+  }
+  100%{
+    width: 10px;
+    height: 10px;
+  }
 }
 .meaning-images {
   width: 150px;
