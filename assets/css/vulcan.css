@@ -1082,7 +1082,7 @@ input:checked + .slip:before {
   position: relative;
 }
 .image360-desc {
-  max-width: 723px;
+  max-width: 730px;
   width: 100%;
   margin: 70px auto 0;
   color: #23a1a3;
@@ -1307,7 +1307,7 @@ input:checked + .slip:before {
 }
 .desc-1 {
   left: 475px;
-  top: -303px;
+  top: -295px;
   width: 343px;
 }
 
@@ -1328,7 +1328,7 @@ input:checked + .slip:before {
 }
 .desc-2 {
   width: 287px;
-  top: -281px;
+  top: -255px;
   left: 450px;
 }
 
@@ -1349,7 +1349,7 @@ input:checked + .slip:before {
 }
 .desc-3 {
   width: 270px;
-  top: -238px;
+  top: -215px;
   left: 382px;
 }
 .circle-4 {
@@ -1391,7 +1391,7 @@ input:checked + .slip:before {
 }
 .desc-5 {
   width: 300px;
-  top: -25px;
+  top: -10px;
   left: 274px;
 }
 
@@ -1470,7 +1470,7 @@ input:checked + .slip:before {
 .desc-7 {
   width: 256px;
   right: 790px;
-  top: -15px;
+  top: -10px;
 }
 
 .circle-8 {
@@ -1539,7 +1539,7 @@ input:checked + .slip:before {
 .desc-10 {
   width: 300px;
   right: 365px;
-  top: -85px;
+  top: -75px;
 }
 .image-4 {
   border-left: 5px solid var(--primary-color);
@@ -1566,7 +1566,7 @@ input:checked + .slip:before {
 .desc-11 {
   width: 300px;
   right: 545px;
-  top: -150px;
+  top: -145px;
 }
 .image-5 {
   border-left: 5px solid var(--primary-color);
@@ -1629,7 +1629,7 @@ input:checked + .slip:before {
 .desc-13 {
   width: 406px;
   left: 375px;
-  top: -479px;
+  top: -465px;
 }
 .image-7 {
   right: -150px;
@@ -1651,7 +1651,7 @@ input:checked + .slip:before {
 .desc-14 {
   width: 333px;
   left: 200px;
-  top: -20px;
+  top: -10px;
 }
 
 .circle-15 {
@@ -1672,7 +1672,7 @@ input:checked + .slip:before {
 
 .desc-15 {
   width: 319px;
-  top: -230px;
+  top: -215px;
   left: 185px;
 }
 

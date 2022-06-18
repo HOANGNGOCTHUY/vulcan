@@ -1,3 +1,8 @@
+@media screen and(max-width: 1680px) {
+  .feature-image {
+    margin: 70px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .slider {
     height: 100%;
