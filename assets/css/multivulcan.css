@@ -137,6 +137,41 @@
 }
 
 @media screen and (max-width: 1366px) {
+  /* feature  */
+  .feature-image {
+    margin: 70px 115px;
+  }
+  /* Meaning */
+  .image-1 {
+    top: -105px;
+    right: -100px;
+  }
+  .image-2 {
+    top: -100px;
+    right: -115px;
+  }
+  .image-4, .image-5 {
+    top: -100px;
+    left: -155px;
+  }
+  .line16 {
+    width: 320px;
+  }
+  .line18 {
+    width: 335px;
+  }
+  .desc-8 {
+    right: -130px;
+  }
+  .desc-10 {
+    right: 295px;
+  }
+  .desc-11 {
+    right: 485px;
+  }
+  .image-7, .image-8{
+    right: -125px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -169,7 +204,7 @@
   }
   /* 360 */
   .image360 {
-    margin-bottom: 70px;
+    margin-bottom: 140px;
   }
   .image360-main {
     padding: 0 150px;
@@ -797,6 +832,10 @@
     height: 100%;
   }
   /* MEANING */
+  .meaning-circle{
+    width: 14px;
+    height: 14px;
+  }
   .meaning-heading {
     margin-bottom: 70px;
   }
@@ -1049,7 +1088,10 @@
   .image-8 {
     right: -78px;
   }
-
+  /* MEDIA */
+  .owl-dots{
+    margin: 30px 0;
+  }
   /* Experience */
   .experience-desc {
     max-width: 423px;
@@ -1076,6 +1118,14 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
+  /* SCROLL */
+  .scrollMain {
+    top: 85%;
+  }
+  .scrollTop{
+    display: none;
+  }
+  
 }
 @media screen and (max-width: 425px) {
   .mb70px {
@@ -1163,6 +1213,13 @@
   }
   .different-item {
     width: 50%;
+    padding: 0 20px;
+  }
+  .different-item:nth-child(2){
+    padding-right: 0;
+  }
+  .different-item:nth-child(3){
+    padding-left: 0;
   }
   .different-img {
     width: 40px;
@@ -1173,9 +1230,9 @@
     margin-bottom: 10px;
   }
   .different-5 {
-    max-width: 278px;
-    font-size: 12px;
-    line-height: 14px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 25px;
   }
   /* PRE ORDER */
   .preoder-content {
@@ -1321,6 +1378,9 @@
   .story-item {
     padding: 0;
   }
+  .story-text{
+    font-size: 14px;
+  }
 
   /* Outline */
 
@@ -1350,7 +1410,7 @@
   /* 360 */
   .image360 {
     padding: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   .image360-main {
     padding: 0;
@@ -1367,7 +1427,7 @@
     line-height: 16px;
     width: 100%;
     text-align: center;
-    top: 95%;
+    /* top: 95%; */
   }
 
   /* MEANING */
@@ -1388,8 +1448,8 @@
     line-height: 23px;
   }
   .meaning-circle {
-    width: 6px;
-    height: 6px;
+    /* width: 6px;
+    height: 6px; */
   }
   .meaning-one {
     margin-bottom: 180px;
@@ -1462,7 +1522,7 @@
     top: 325px;
   }
   .desc-1 {
-    transform: translateX(-26%) translateY(316%);
+    transform: translateX(-26%) translateY(250%);
   }
   .desc-2 {
     transform: translateX(-54%) translateY(184%);
@@ -1484,6 +1544,8 @@
   .image-3 {
     top: -10px;
     right: -10px;
+    border-right: 2px solid var(--yellow-color);
+    border-top: 2px solid var(--yellow-color);
   }
 
   .meaning-two {
@@ -1552,7 +1614,9 @@
   .image-4,
   .image-5 {
     top: -10px;
-    left: -35px;
+    left: -20px;
+    border-left: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary-color);
   }
 
   .meaning-three {
@@ -1605,7 +1669,20 @@
   .image-8 {
     top: -10px;
     right: -10px;
+    border-top: 2px solid var(--green-color);
+    border-right: 2px solid var(--green-color);
   }
+
+  /* Social */
+  .social-fixed{
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 40px;
+    z-index: 99;
+  }
+  
+
 
   /* PRICE */
   .price-main {
@@ -1680,7 +1757,9 @@
   .video-item iframe {
     height: 100%;
   }
-
+  .media-image{
+    margin-bottom: 30px;
+  }
   /* Experience */
 
   .experience {
@@ -1926,6 +2005,85 @@
     left: -50px;
   }
 }
+@media screen and (max-width: 390px){
+  .global-desc{
+    font-size: 19px;
+  }
+  /* 360 */
+  .image360-desc{
+    font-size: 16px;
+  }
+  /* Different */
+  .different-5{
+    font-size: 15px;
+  }
+  /* Meaning */
+  .meaningone-image {
+    left: -45px;
+  }
+  .desc-1 {
+    transform: translateX(-35%) translateY(235%);
+  }
+  .desc-2 {
+    transform: translateX(-62%) translateY(169%);
+  }
+  .desc-3 {
+    transform: translateX(-57%) translateY(152%);
+  }
+  .desc-4 {
+    transform: translateX(-68%) translateY(113%);
+  }
+  .desc-5 {
+    transform: translateX(-79%) translateY(72%);
+  }
+  .desc-6 {
+    transform: translateX(-70%) translateY(85%);
+  }
+
+  .circle-9 {
+    right: 85px;
+    top: 135px;
+  }
+  .circle-11 {
+    right: 150px;
+    top: 180px;
+  }
+  .desc-7 {
+    transform: translateX(-80%) translateY(315%);
+  }
+  .desc-8 {
+    transform: translateX(-85%) translateY(370%);
+  }
+  .desc-9 {
+    transform: translateX(-83%) translateY(260%);
+  }
+  .desc-10 {
+    transform: translateX(-51%) translateY(240%);
+  }
+  .desc-11 {
+    transform: translateX(-63%) translateY(160%);
+  }
+
+  .meaningtwo-image {
+    right: -140px;
+  }
+
+  .meaningthree-image {
+    left: -40px;
+  }
+  .desc-12 {
+    transform: translateX(-10%) translateY(175%);
+  }
+  .desc-13 {
+    transform: translateX(-50%) translateY(109%);
+  }
+  .desc-14 {
+    transform: translateX(-75%) translateY(190%);
+  }
+  .desc-15 {
+    transform: translateX(-76%) translateY(32%);
+  }
+}
 @media screen and (max-width: 375px) {
   .global-desc {
     font-size: 16px;
@@ -1957,8 +2115,20 @@
     left: -40px;
   }
 
+  .circle-4 {
+    left: 240px;
+    top: 280px;
+  }
+  .circle-11 {
+    right: 150px;
+    top: 180px;
+  }
+  .circle-9 {
+    right: 85px;
+    top: 140px;
+  }
   .desc-1 {
-    transform: translateX(-36%) translateY(315%);
+    transform: translateX(-36%) translateY(250%);
   }
   .desc-2 {
     transform: translateX(-63%) translateY(184%);
@@ -1982,13 +2152,13 @@
     transform: translateX(-85%) translateY(373%);
   }
   .desc-9 {
-    transform: translateX(-81%) translateY(248%);
+    transform: translateX(-81%) translateY(258%);
   }
   .desc-10 {
     transform: translateX(-49%) translateY(241%);
   }
   .desc-11 {
-    transform: translateX(-61%) translateY(156%);
+    transform: translateX(-61%) translateY(162%);
   }
   .desc-12 {
     transform: translateX(-11%) translateY(167%);
@@ -2001,6 +2171,9 @@
   }
   .desc-15 {
     transform: translateX(-77%) translateY(26%);
+  }
+  .image-4, .image-5{
+    left: -10px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2018,6 +2191,9 @@
   /* 360 */
   .image360-desc {
     padding: 0;
+  }
+  .content360 .span360, .content360 .spann360{
+    font-size: 15px;
   }
   /* Meaning */
   .meaning-one {
@@ -2077,9 +2253,9 @@
     top: 210px;
   }
   .circle-4 {
-    left: 220px;
-    top: 240px;
-  }
+    left: 215px;
+    top: 235px;
+}
   .circle-5 {
     left: 245px;
     top: 265px;
@@ -2090,16 +2266,16 @@
   }
 
   .desc-1 {
-    transform: translateX(-41%) translateY(320%);
+    transform: translateX(-42%) translateY(245%);
   }
   .desc-2 {
-    transform: translateX(-68%) translateY(172%);
+    transform: translateX(-69%) translateY(171%);
   }
   .desc-3 {
     transform: translateX(-63%) translateY(152%);
   }
   .desc-4 {
-    transform: translateX(-74%) translateY(113%);
+    transform: translateX(-73%) translateY(120%);
   }
   .desc-5 {
     transform: translateX(-84%) translateY(83%);
@@ -2124,40 +2300,42 @@
   }
 
   .circle-7 {
-    right: 75px;
-    top: 20px;
+    right: 70px;
+    top: 15px;
   }
   .circle-8 {
-    right: 58px;
-    top: 44px;
+    right: 55px;
+    top: 40px;
   }
   .circle-9 {
-    right: 63px;
-    top: 122px;
+    right: 60px;
+    top: 112px;
   }
   .circle-10 {
-    right: 150px;
+    right: 145px;
     top: 85px;
   }
   .circle-11 {
-    right: 116px;
-    top: 160px;
+    right: 115px;
+    top: 152px;
   }
 
   .desc-7 {
     transform: translateX(-82%) translateY(325%);
+    background: blue;
+
   }
   .desc-8 {
-    transform: translateX(-89%) translateY(298%);
+    transform: translateX(-88%) translateY(294%);
   }
   .desc-9 {
-    transform: translateX(-87%) translateY(200%);
+    transform: translateX(-85%) translateY(205%);
   }
   .desc-10 {
-    transform: translateX(-53%) translateY(247%);
+    transform: translateX(-52%) translateY(240%);
   }
   .desc-11 {
-    transform: translateX(-67%) translateY(155%);
+    transform: translateX(-64%) translateY(155%);
   }
   .image-4,
   .image-5 {

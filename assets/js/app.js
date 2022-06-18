@@ -5,7 +5,7 @@ var nav_height = navs.outerHeight();
 
 $(window).on("scroll", function () {
   var cur_pos = $(this).scrollTop();
-  console.log(cur_pos);
+  // console.log(cur_pos);
 
   sections.each(function () {
     var top = $(this).offset().top - nav_height;
@@ -55,6 +55,27 @@ $(document).ready(function () {
     );
   });
 });
+
+// Scroll Mobile
+$(document).ready(function () {
+  var showgotoTop = 300;
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= showgotoTop) {
+      $("#backtop-mobile").fadeIn();
+    } else {
+      // $("#backtop-mobile").fadeOut();
+    }
+  });
+  $("#backtop-mobile").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      2000
+    );
+  });
+});
+
 // HIDE SHOW
 $(".btnModal").on("click", function () {
   $("#modal").fadeIn();
@@ -79,12 +100,13 @@ $(".media-video").owlCarousel({
     0: {
       loop: true,
       items: 1,
+      dots: false,
       nav: false,
       autoplay: true,
       autoplayTimeout: 3000,
     },
     600: {
-      items: 3,
+      items: 1,
     },
     1000: {
       items: 2,
@@ -104,8 +126,9 @@ $(".media-list").owlCarousel({
       loop: true,
       items: 1,
       nav: false,
-      autoplay: true,
-      autoplayTimeout: 3000,
+      dots: false,
+      // autoplay: true,
+      // autoplayTimeout: 3000,
     },
     600: {
       items: 1,
@@ -250,25 +273,13 @@ var productViewer = new ProductViewer({
 
 // *****************************************************************
 // Show hide img
-// var check = document.getElementById("checkbox-img");
-// var img1 = document.getElementById("img-1");
-// var img2 = document.getElementById("img-2");
-// check.addEventListener("click", function () {
-//   if (check.checked == true) {
-//     img1.style.display = "none";
-//     img2.style.display = "block";
-//   } else {
-//     img1.style.display = "block";
-//     img2.style.display = "none";
-//   }
-// });
-var check = document.getElementById("scrolldown");
+var check = document.getElementById("checkbox-img");
 var img1 = document.getElementById("img-1");
 var img2 = document.getElementById("img-2");
-var story1 = document.getElementById("story-1");
-var story2 = document.getElementById("story-2");
+ var story1 = document.getElementById("story-1");
+ var story2 = document.getElementById("story-2");
 check.addEventListener("click", function () {
-  if (check.classList.toggle("checked")) {
+  if (check.checked == true) {
     img1.style.display = "none";
     img2.style.display = "block";
     story1.style.display = "none";
@@ -279,7 +290,25 @@ check.addEventListener("click", function () {
     story1.style.display = "block";
     story2.style.display = "none";
   }
-});
+ });
+// var check = document.getElementById("scrolldown");
+// var img1 = document.getElementById("img-1");
+// var img2 = document.getElementById("img-2");
+// var story1 = document.getElementById("story-1");
+// var story2 = document.getElementById("story-2");
+// check.addEventListener("click", function () {
+//   if (check.classList.toggle("checked")) {
+//     img1.style.display = "none";
+//     img2.style.display = "block";
+//     story1.style.display = "none";
+//     story2.style.display = "block";
+//   } else {
+//     img1.style.display = "block";
+//     img2.style.display = "none";
+//     story1.style.display = "block";
+//     story2.style.display = "none";
+//   }
+// });
 
 // Slide story
 var storys = document.querySelectorAll(".story-item");
