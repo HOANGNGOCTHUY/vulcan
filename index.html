@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VULCAN</title>
+    <title>Vulcan</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/vulcan.css" />
     <link rel="stylesheet" href="./assets/css/multivulcan.css" />
@@ -22,45 +23,6 @@
   </head>
   <body>
     <div id="app">
-      <!-- header -->
-      <!-- <section class="mb70px header">
-        <div class="container">
-          <div class="header-main">
-            <div class="header-logo">
-              <img src="./assets/images/logo.png" alt="" />
-            </div>
-
-            <ul class="header-menu">
-              <li class="menu-item">
-                <a
-                  class="header-links"
-                  href="http://www.elsun.vn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="icon-header icon-globe"></i>www.elsun.vn</a
-                >
-              </li>
-              <li class="menu-item">
-                <a class="header-links" href="tel:+0833611166"
-                  ><i class="icon-header icon-phone"></i>0833 611 166</a
-                >
-              </li>
-              <li class="menu-item">
-                <a class="header-links" href="tel:+0792134081">0792 134 081</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-links" href="tel:+0933316141">0933 316 141</a>
-              </li>
-            </ul>
-            <div class="hamburger">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Test -->
       <!-- Slider -->
       <section class="mb70px slider">
         <div class="container-fluid">
@@ -110,7 +72,11 @@
                 Định nghĩa về bàn làm việc thế hệ mới
               </div>
             </div>
-
+            <div class="different-5">
+              Nội thất 5.0 dùng để chỉ những sản phẩm nội thất hội tụ sự tiện
+              ích, thiết kế thân thiện, gia tăng trải nghiệm người dùng. Là khái
+              niệm mới ELSUN đang gầy dựng để chinh phục thị trường.
+            </div>
             <div class="different-list">
               <div class="different-item">
                 <div class="different-img">
@@ -158,7 +124,7 @@
       </section>
 
       <!-- Pre Order -->
-      <section class="preorder mb70px">
+      <section id="preorder" class="preorder mb70px">
         <div class="container-fluid">
           <div class="preorder-main">
             <div class="preorder-image">
@@ -213,7 +179,7 @@
                     <div class="preorder-old">19,999,000 vnđ</div>
                   </div>
                   <div class="preorder-click">
-                    <a id="btn-modal" class="preorder-links btn-click"
+                    <a id="btn-modal" class="preorder-links btn-click btnModal"
                       >Đặt hàng ngay</a
                     >
                     <span class="preorder-sales"
@@ -227,7 +193,7 @@
         </div>
       </section>
       <!-- 360 -->
-      <section id="scroll360" class="image360">
+      <section id="scroll360" class="mb70px image360">
         <div class="container">
           <div class="image360-main">
             <div class="vulcan-heading">
@@ -247,7 +213,10 @@
             <div id="product_viewer"></div>
 
             <div class="content360">
-              <span>Chạm, lướt khám phá bàn Vulcan</span>
+              <span class="spann360"
+                >Hình ảnh 360°, xoay để khám phá bàn Vulcan</span
+              >
+              <span class="span360">Chạm, lướt khám phá bàn Vulcan</span>
             </div>
           </div>
         </div>
@@ -283,8 +252,7 @@
                         Nâng tầm thiết kế giấu dây
                       </h1>
                       <div class="feature-description">
-                        Dây điện bố trí trong trụ bàn tạo ra bản đồ đi điện an
-                        toàn.
+                        Dây điện bên trong trụ được sắp đặt gọn gàng và hợp lý.
                       </div>
                     </div>
                   </div>
@@ -320,7 +288,7 @@
                     </div>
                   </div>
                   <div class="cart-buy">
-                    <a id="btn-modal" class="btn-click">
+                    <a id="btn-modal" class="btn-click btnModal">
                       <span>đặt hàng ngay</span>
                     </a>
                   </div>
@@ -347,14 +315,14 @@
               <img id="img-2" src="./assets/images/story/hinh3602.png" alt="" />
             </div>
 
-            <div class="story-body">
-              <div class="vulcan-heading story-reserve">
-                <div class="vulcan-image story-image">
-                  <img src="./assets/images/vector.png" alt="" />
-                </div>
-                <h1 class="global-title story-title">Câu chuyện</h1>
-                <div class="global-desc story-desc">Về bàn làm việc 5.0</div>
+            <div class="vulcan-heading story-reserve">
+              <div class="vulcan-image story-image">
+                <img src="./assets/images/vector.png" alt="" />
               </div>
+              <h1 class="global-title story-title">Câu chuyện</h1>
+              <div class="global-desc story-desc">Về bàn làm việc 5.0</div>
+            </div>
+            <div class="story-body">
               <div class="story-list">
                 <div class="story-item" id="story-1">
                   <div class="story-name">Vượt trên nguyên mẫu</div>
@@ -382,56 +350,7 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="checkbox-image">
-              <label class="switch">
-                <input type="checkbox" id="checkbox-img" />
-                <span class="slip round"></span>
-              </label>
-            </div> -->
           </div>
-          <!-- <div class="story-content">
-            <span class="story-line"></span>
-            <div class="story-item story-active">
-              <h1 class="story-name">Vượt trên nguyên mẫu</h1>
-              <div class="sotry-description">
-                <p>
-                  Tách biệt với lối thiết kế truyền thống, khởi tạo kỷ nguyên
-                  mới cho bàn làm việc. Tạo nên những trải nghiệm đích thực
-                  trong từng chi tiết thiết kế và trang thiết bị.
-                </p>
-              </div>
-            </div>
-            <div class="story-item">
-              <h1 class="story-name">Tối ưu trải nghiệm</h1>
-              <div class="sotry-description">
-                <p>
-                  Toàn bộ thiết kế và trang thiết bị được tinh chỉnh tối đa nhằm
-                  mang đến những trải nghiệm chân thực và thích thú cho người sử
-                  dụng.
-                </p>
-              </div>
-            </div>
-            <div class="story-item">
-              <h1 class="story-name">Bắt kịp xu hướng</h1>
-              <div class="sotry-description">
-                <p>
-                  Vulcan là sản phẩm hoàn hảo cho mọi không gian làm việc, ngay
-                  cả tại nhà. Thiết bị tiện nghi và thiết kế giấu dây đẳng cấp
-                  tạo nên góc làm việc đẳng cấp.
-                </p>
-              </div>
-            </div>
-
-            <div class="controls">
-              <div class="box prev-btn">
-                <i class="icon-click icon-left"></i>
-              </div>
-              <div class="box next-btn">
-                <i class="icon-click icon-right"></i>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
 
@@ -467,48 +386,12 @@
                   Dáng hình nguyên sơ từ trí óc truyền đến đôi tay
                 </div>
               </div>
-              <!-- <div class="outline-name">bàn làm việc 5.0</div> -->
               <div class="outline-text">
                 Từng đường nét Vulcan từ bản thô đến khi thành hình đều được ghi
                 lại trên những bản phác thảo của nhà thiết kế ELSUN.
               </div>
-              <!-- <a href="#" class="btn-click">đặt hàng ngay</a> -->
-              <!-- <div class="cart-buy">
-                <a href="#!" class="btn">
-                  <svg width="180" height="60">
-                    <defs>
-                      <linearGradient id="grad1">
-                        <stop
-                          offset="0%"
-                          style="
-                            stop-color: rgb(215, 32, 70);
-                            stop-opacity: 0.4;
-                          "
-                        />
-                        <stop
-                          offset="100%"
-                          style="
-                            stop-color: rgb(215, 32, 70);
-                            stop-opacity: 0.4;
-                          "
-                        />
-                      </linearGradient>
-                    </defs>
-                    <rect
-                      x="5"
-                      y="5"
-                      rx="30px"
-                      fill="none"
-                      stroke="url(#grad1)"
-                      width="170"
-                      height="50"
-                    ></rect>
-                  </svg>
-                  <span>đặt hàng ngay</span>
-                </a>
-              </div> -->
               <div class="cart-buy">
-                <a href="#" class="btn-click">
+                <a href="#" class="btn-click btnModal">
                   <span>đặt hàng ngay</span>
                 </a>
               </div>
@@ -556,9 +439,10 @@
                       <div class="line-group line1"></div>
                       <div class="line-group line2"></div>
                       <div class="meaning-description desc-1">
-                        <div class="meaing-desc_title">Hình trăng khuyết</div>
+                        <div class="meaing-desc_title">Trục liên kết</div>
                         <span class="meaing-desc_text"
-                          >Vị trí lắp đặt giá đỡ màn hình</span
+                          >Vị trí lắp đặt giá đỡ màn hình và đi dây điện tiện
+                          ích.</span
                         >
                       </div>
                     </div>
@@ -583,7 +467,7 @@
                       <div class="line-group line5"></div>
                       <div class="line-group line6"></div>
                       <div class="meaning-description desc-3">
-                        <div class="meaing-desc_title">cổng kết nối</div>
+                        <div class="meaing-desc_title">Trung tâm kết nối</div>
                         <span class="meaing-desc_text"
                           >Khu vực hỗ trợ giấu dây, sắp xếp toàn bộ dây điện của
                           thiết bị</span
@@ -868,7 +752,7 @@
                 người dùng, tạo ra những phút giây sử dụng tiện ích.
               </div>
               <div class="cart-buy left">
-                <a href="#" class="btn-click">
+                <a href="#" class="btn-click btnModal">
                   <span>đặt hàng ngay</span>
                 </a>
               </div>
@@ -896,8 +780,9 @@
               </div>
             </div>
 
-            <div class="media-list">
-              <div class="media-image activeddd">
+            <div class="media-list owl-carousel owl-theme">
+              <!-- activeddd -->
+              <div class="media-image">
                 <div class="media-group">
                   <div class="media-big">
                     <a
@@ -1034,22 +919,66 @@
               </div>
             </div>
 
-            <div class="media-pani">
+            <!-- <div class="media-pani">
               <div class="media-btn activeddd"></div>
               <div class="media-btn"></div>
               <div class="media-btn"></div>
-            </div>
+            </div> -->
+            <style>
+              .owl-prev,
+              .owl-next {
+                position: absolute;
+                top: 44%;
+                transform: translateY(-50%);
+              }
+              .owl-theme .owl-nav [class*="owl-"]:hover {
+                background: transparent;
+              }
+              .owl-prev {
+                left: -50px;
+              }
+              .owl-prev span {
+                font-size: 100px;
+                color: var(--primary-color);
+              }
+              .owl-next {
+                right: -50px;
+              }
+              .owl-next span {
+                font-size: 100px;
+                color: var(--primary-color);
+              }
+              .owl-dots {
+                margin: 70px 0;
+              }
+              .owl-theme .owl-dots .owl-dot.active span,
+              .owl-theme .owl-dots .owl-dot:hover span {
+                background: var(--primary-color);
+                position: relative;
+              }
+              .owl-theme .owl-dots .owl-dot.active span::before {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                border: 1px solid var(--yellow-color);
+                border-radius: 50%;
+              }
+            </style>
 
-            <div class="owl-carousel media-video">
+            <div class="owl-carousel owl-theme media-video">
               <div class="video-item">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/qHZz2YJP-ew?autoplay=1&mute=1"
+                  src="https://www.youtube.com/embed/pcNsoWETa5M?autoplay=1&mute=1"
                   allowfullscreen
                 >
                 </iframe>
-
                 <span>Ra mắt chính thức</span>
               </div>
               <div class="video-item">
@@ -1102,7 +1031,6 @@
                   <img src="./assets/images/experience/vector2.png" alt="" />
                   <div class="experience-list">
                     <div class="experience-items change">
-                      <!-- <div class="experience-titlee">sản phẩm rất hài lòng</div> -->
                       <div class="experience-descc">
                         Sản phẩm đúng với giá tiền, đóng gói cũng rất cẩn thận,
                         các ổ cắm hoạt động ok nhưng sử dụng dài lâu xem độ bền
@@ -1112,7 +1040,6 @@
                       <div class="experience-name">@MinhDuc</div>
                     </div>
                     <div class="experience-items">
-                      <!-- <div class="experience-titlee">sản phẩm rất hài lòng</div> -->
                       <div class="experience-descc">
                         Ờ mây zing gút chóp em, sản phẩm rất tuyệt vời, nhân
                         viên nhiệt tình, đóng gói sản phẩm cẩn thận, tôi sẽ giới
@@ -1121,7 +1048,6 @@
                       <div class="experience-name">@Mr.SiroQuangTri</div>
                     </div>
                     <div class="experience-items">
-                      <!-- <div class="experience-titlee">sản phẩm rất hài lòng</div> -->
                       <div class="experience-descc">
                         Màu trắng có làm em lo lắng, không thể trượt phát lào,
                         sản phẩm rất tuyệt và đẹp hơn những gì tôi mong
@@ -1193,7 +1119,6 @@
               </div>
             </form>
 
-            <!-- <div class="clear"></div> -->
             <div class="contact-body">
               <div class="vulcan-heading contact-heading">
                 <div class="left vulcan-image">
@@ -1277,7 +1202,7 @@
                     >Shopee</a
                   >
                 </li>
-                <li class="menu-item"><a href="#">Amazone</a></li>
+                <!-- <li class="menu-item"><a href="#">Amazone</a></li> -->
               </ul>
               <div class="footer-icons">
                 <a
@@ -1292,9 +1217,9 @@
                   class="icon-footer"
                   ><i class="icon-instagram"></i
                 ></a>
-                <a target="_blank" href="" class="icon-footer"
+                <!-- <a target="_blank" href="" class="icon-footer"
                   ><i class="icon-amazon"></i
-                ></a>
+                ></a> -->
                 <a
                   target="_blank"
                   href="https://shopee.vn/noithatelsun"
@@ -1322,17 +1247,18 @@
         </div>
       </section>
 
-      <!-- <div class="scrollMain">
+      <div class="scrollMain">
         <nav class="scrollTop">
           <ul class="scroll-list">
             <li class="scroll-item">
               <a href="#khampha" class="croll-links activedd">
                 <span>Khám phá</span>
+                <!--  -->
               </a>
             </li>
             <li class="scroll-item">
-              <a href="#visao" class="croll-links">
-                <span>Vì sao</span>
+              <a href="#preorder" class="croll-links">
+                <span>Pre Order</span>
               </a>
             </li>
             <li class="scroll-item">
@@ -1340,6 +1266,12 @@
                 <span>Hình 360</span>
               </a>
             </li>
+            <li class="scroll-item">
+              <a href="#visao" class="croll-links">
+                <span>Vì sao</span>
+              </a>
+            </li>
+
             <li class="scroll-item">
               <a href="#cauchuyen" class="croll-links">
                 <span>Câu chuyện</span>
@@ -1384,15 +1316,16 @@
           <div class="social social-msg">
             <i class="fa-brands fa-facebook-messenger"></i>
           </div>
-          <div class="scroll-buy">
+          <div class="scroll-buy btnModal">
             <a href="">Đặt hàng ngay</a>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="scroll-buy sroll-reverse">
         <a href="">Đặt hàng ngay</a>
       </div>
     </div>
+
     <div class="modal-hero" id="modal">
       <div class="modal-preorder">
         <div class="modal-main">
@@ -1457,68 +1390,15 @@
         </div>
       </div>
     </div>
-    
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/product-viewer.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
-    <script>
-      // var sections = $("section");
-      // var navs = $(".scrollTop");
-      // var nav_height = navs.outerHeight();
-
-      // $(window).on("scroll", function () {
-      //   var cur_pos = $(this).scrollTop();
-      //   console.log(cur_pos);
-
-      //   sections.each(function () {
-      //     var top = $(this).offset().top - nav_height;
-      //     var bottom = top + $(this).outerHeight();
-
-      //     if (cur_pos >= top && cur_pos <= bottom) {
-      //       navs.find("a").removeClass("activedd");
-      //       sections.removeClass("activedd");
-
-      //       $(this).addClass("activedd");
-
-      //       navs
-      //         .find('a[href="#' + $(this).attr("id") + '"]')
-      //         .addClass("active");
-      //     }
-      //   });
-      // });
-
-      // navs.find("a").on("click", function () {
-      //   var $el = $(this),
-      //     id = $el.attr("href");
-
-      //   $("html, body").animate(
-      //     {
-      //       scrollTop: $(id).offset().top - nav_height,
-      //     },
-      //     500
-      //   );
-
-      //   return false;
-      // });
-    </script>
+    <!-- <script src="./assets/js/jquery.scroll-spy.js"></script>
+    <script src="./assets/js/jquery.scroll-spy.min.js"></script> -->
+    <script src="./assets/js/app.js"></script>
 
     <script></script>
-    <script>
-      $(".btn-click").on("click", function () {
-        $("#modal").fadeIn();
-        $("#app").fadeOut();
-      });
-      $("#btn-submit").on("click", function () {
-        $("#modal").fadeOut();
-        $("#app").fadeIn();
-      });
-      $("#close").on("click", function () {
-        $("#modal").fadeOut();
-        $("#app").fadeIn();
-      });
-    </script>
   </body>
 </html>

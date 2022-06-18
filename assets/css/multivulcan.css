@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1366px) {
 }
 
 @media screen and (max-width: 1024px) {
@@ -174,9 +174,13 @@
   .image360-main {
     padding: 0 150px;
   }
-  .content360 {
+  .content360 .span360 {
     display: block;
   }
+  .content360 .spann360 {
+    display: none;
+  }
+
   /* FEATURE */
   .feature-left,
   .feature-right {
@@ -212,7 +216,8 @@
   .story-img {
     width: 600px;
   }
-  .story-body {
+  .story-body,
+  .story-reserve {
     right: 70px;
   }
   .checkbox {
@@ -732,10 +737,25 @@
     width: 100%;
     height: 100%;
   }
-
+  /* Different */
+  .different-5 {
+    max-width: 612px;
+  }
   /* 360 */
   .image360-main {
     padding: 0 70px;
+  }
+  .icon-360 {
+    top: 64%;
+  }
+  .icon-360 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image360-desc {
+    font-size: 30px;
+    line-height: 35px;
   }
 
   /* Feature */
@@ -777,13 +797,26 @@
     height: 100%;
   }
   /* MEANING */
-  .meaning-heading{
+  .meaning-heading {
     margin-bottom: 70px;
   }
-  .desc-7, .desc-8, .desc-9, .desc-10, .desc-11{
+  .desc-7,
+  .desc-8,
+  .desc-9,
+  .desc-10,
+  .desc-11 {
     text-align: right;
   }
-  .desc-1, .desc-2, .desc-3, .desc-4, .desc-5, .desc-6, .desc-12, .desc-13, .desc-14, .desc-15{
+  .desc-1,
+  .desc-2,
+  .desc-3,
+  .desc-4,
+  .desc-5,
+  .desc-6,
+  .desc-12,
+  .desc-13,
+  .desc-14,
+  .desc-15 {
     text-align: left;
   }
   .meaning-one {
@@ -799,7 +832,7 @@
     padding: 17px 62px;
     min-width: 430px;
     width: 100%;
-    z-index: 9 ;
+    z-index: 9;
   }
   .line-group {
     display: none;
@@ -881,7 +914,6 @@
     left: 50%;
     transform: translateX(-82%) translateY(298%);
   }
-
 
   .meaning-two {
     /* margin-bottom: 100px; */
@@ -1140,6 +1172,11 @@
     margin-top: 20px;
     margin-bottom: 10px;
   }
+  .different-5 {
+    max-width: 278px;
+    font-size: 12px;
+    line-height: 14px;
+  }
   /* PRE ORDER */
   .preoder-content {
     margin-top: 30px;
@@ -1334,7 +1371,7 @@
   }
 
   /* MEANING */
-  .meaning-heading{
+  .meaning-heading {
     margin-bottom: 30px;
   }
   .meaningone-image {
@@ -1435,21 +1472,21 @@
   }
   .desc-4 {
     transform: translateX(-60%) translateY(128%);
-    
   }
   .desc-5 {
     transform: translateX(-71%) translateY(88%);
-    
   }
   .desc-6 {
     transform: translateX(-61%) translateY(105%);
   }
-  .image-1, .image-2, .image-3 {
+  .image-1,
+  .image-2,
+  .image-3 {
     top: -10px;
     right: -10px;
   }
 
-  .meaning-two{
+  .meaning-two {
     margin-bottom: 130px;
   }
   .meaningtwo-image {
@@ -1518,7 +1555,7 @@
     left: -35px;
   }
 
-  .meaning-three{
+  .meaning-three {
     margin-bottom: 150px;
   }
 
@@ -1551,23 +1588,21 @@
     left: 273px;
     top: 346px;
   }
-  .desc-12{
+  .desc-12 {
     transform: translateX(-3%) translateY(175%);
   }
-  .desc-13{
+  .desc-13 {
     transform: translateX(-43%) translateY(109%);
-
   }
-  .desc-14{
-    transform: translateX(-68%) translateY(190% );
-    
+  .desc-14 {
+    transform: translateX(-68%) translateY(190%);
   }
-  .desc-15{
+  .desc-15 {
     transform: translateX(-69%) translateY(32%);
-
   }
-  
-  .image-7, .image-8 {
+
+  .image-7,
+  .image-8 {
     top: -10px;
     right: -10px;
   }
@@ -1879,7 +1914,7 @@
     margin-left: 1px;
   }
 }
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
   /* MEANING */
   .meaningone-image {
     left: -50px;
@@ -1889,15 +1924,18 @@
   }
   .meaningthree-image {
     left: -50px;
+  }
 }
-
-}
-@media screen and (max-width: 375px){
-  .global-desc{
+@media screen and (max-width: 375px) {
+  .global-desc {
     font-size: 16px;
   }
-  .outline-desc{
+  .outline-desc {
     padding: 0;
+  }
+  /* STORY */
+  .story-text {
+    font-size: 14px;
   }
   /* MEANING */
   .meaning-one {
@@ -1919,55 +1957,54 @@
     left: -40px;
   }
 
-  .desc-1{
+  .desc-1 {
     transform: translateX(-36%) translateY(315%);
   }
-  .desc-2{
+  .desc-2 {
     transform: translateX(-63%) translateY(184%);
   }
-  .desc-3{
+  .desc-3 {
     transform: translateX(-58%) translateY(166%);
   }
-  .desc-4{
+  .desc-4 {
     transform: translateX(-69%) translateY(128%);
   }
-  .desc-5{
+  .desc-5 {
     transform: translateX(-80%) translateY(88%);
   }
-  .desc-6{
+  .desc-6 {
     transform: translateX(-70%) translateY(105%);
   }
-  .desc-7{
+  .desc-7 {
     transform: translateX(-78%) translateY(315%);
   }
-  .desc-8{
+  .desc-8 {
     transform: translateX(-85%) translateY(373%);
   }
-  .desc-9{
+  .desc-9 {
     transform: translateX(-81%) translateY(248%);
   }
-  .desc-10{
+  .desc-10 {
     transform: translateX(-49%) translateY(241%);
   }
-  .desc-11{
+  .desc-11 {
     transform: translateX(-61%) translateY(156%);
   }
-  .desc-12{
+  .desc-12 {
     transform: translateX(-11%) translateY(167%);
   }
-  .desc-13{
+  .desc-13 {
     transform: translateX(-51%) translateY(103%);
   }
-  .desc-14{
-    transform: translateX(-76%) translateY(184% );
+  .desc-14 {
+    transform: translateX(-76%) translateY(184%);
   }
-  .desc-15{
+  .desc-15 {
     transform: translateX(-77%) translateY(26%);
   }
-
 }
-@media screen and (max-width: 320px){
-  .global-title{
+@media screen and (max-width: 320px) {
+  .global-title {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 10px;
@@ -1975,15 +2012,15 @@
   .global-desc {
     font-size: 15px;
   }
-  .global-name{
+  .global-name {
     font-size: 14px;
   }
   /* 360 */
-  .image360-desc{
+  .image360-desc {
     padding: 0;
   }
   /* Meaning */
-  .meaning-one{
+  .meaning-one {
     margin-bottom: 170px;
   }
   .svg-heading::before {
@@ -2107,13 +2144,13 @@
     top: 160px;
   }
 
-  .desc-7{
+  .desc-7 {
     transform: translateX(-82%) translateY(325%);
   }
   .desc-8 {
     transform: translateX(-89%) translateY(298%);
   }
-  .desc-9{
+  .desc-9 {
     transform: translateX(-87%) translateY(200%);
   }
   .desc-10 {
@@ -2122,7 +2159,8 @@
   .desc-11 {
     transform: translateX(-67%) translateY(155%);
   }
-  .image-4, .image-5 {
+  .image-4,
+  .image-5 {
     top: -10px;
     left: -25px;
   }
@@ -2168,12 +2206,11 @@
     transform: translateX(-54%) translateY(117%);
   }
   .desc-14 {
-    transform: translateX(-81%) translateY(210% );
+    transform: translateX(-81%) translateY(210%);
   }
   .desc-15 {
     transform: translateX(-83%) translateY(28%);
   }
-
 
   /* Price */
   .price-price {
@@ -2181,8 +2218,7 @@
     line-height: 40px;
   }
   /* Contact */
-  .col{
+  .col {
     padding: 0;
   }
 }
-

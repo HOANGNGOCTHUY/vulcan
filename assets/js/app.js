@@ -1,3 +1,41 @@
+// Scroll Menu
+var sections = $("section");
+var navs = $(".scrollTop");
+var nav_height = navs.outerHeight();
+
+$(window).on("scroll", function () {
+  var cur_pos = $(this).scrollTop();
+  console.log(cur_pos);
+
+  sections.each(function () {
+    var top = $(this).offset().top - nav_height;
+    var bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      navs.find("a").removeClass("activedd");
+      sections.removeClass("activedd");
+
+      $(this).addClass("activedd");
+
+      navs.find('a[href="#' + $(this).attr("id") + '"]').addClass("activedd");
+    }
+  });
+});
+
+navs.find("a").on("click", function () {
+  var $el = $(this),
+    id = $el.attr("href");
+
+  $("html, body").animate(
+    {
+      scrollTop: $(id).offset().top,
+    },
+    500
+  );
+
+  return false;
+});
+
 // Scroll
 $(document).ready(function () {
   var showgotoTop = 300;
@@ -17,12 +55,25 @@ $(document).ready(function () {
     );
   });
 });
-
+// HIDE SHOW
+$(".btnModal").on("click", function () {
+  $("#modal").fadeIn();
+  $("#app").fadeOut();
+});
+$("#btn-submit").on("click", function () {
+  $("#modal").fadeOut();
+  $("#app").fadeIn();
+});
+$("#close").on("click", function () {
+  $("#modal").fadeOut();
+  $("#app").fadeIn();
+});
 // Video
-$(".owl-carousel").owlCarousel({
+$(".media-video").owlCarousel({
   loop: false,
   margin: 10,
   nav: false,
+  dots: false,
 
   responsive: {
     0: {
@@ -36,7 +87,31 @@ $(".owl-carousel").owlCarousel({
       items: 3,
     },
     1000: {
-      items: 3,
+      items: 2,
+    },
+  },
+});
+
+$(".media-list").owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: true,
+  dots: true,
+  dotsData: false,
+
+  responsive: {
+    0: {
+      loop: true,
+      items: 1,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
     },
   },
 });
@@ -205,7 +280,7 @@ check.addEventListener("click", function () {
     story2.style.display = "none";
   }
 });
- 
+
 // Slide story
 var storys = document.querySelectorAll(".story-item");
 var nextBtn = document.querySelector(".next-btn");
